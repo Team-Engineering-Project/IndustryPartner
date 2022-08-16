@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 
 import FilterComponent from "./FilterComponent";
-import ProfileCardComponent from "./ProfileCardComponent";
+import ProfileCardsComponent from "./ProfileCardsComponent";
+
 function Main()
 {
     const [graduates, setGraduates] = useState(null);
@@ -33,11 +34,11 @@ function Main()
                     <FilterComponent />
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-around', padding: '20px', borderRadius: '5px', backgroundColor: "white" }}>
-                    {graduates && graduates.map((graduate) =>
+                    {/* {graduates && graduates.map((graduate) =>
                     {
                         return <ProfileCardComponent key={graduate._id} graduate={graduate} />
-                    })}
-
+                    })} */}
+                    {graduates && <ProfileCardsComponent graduates={graduates} />}
 
                 </div>
 

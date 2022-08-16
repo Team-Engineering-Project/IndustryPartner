@@ -1,20 +1,33 @@
 
 import ProfileCardComponent from "./ProfileCardComponent";
-import Stack from 'react-bootstrap/Stack'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Col from 'react-bootstrap/Col';
 
-function ProfileCardsComponent()
+function ProfileCardsComponent({ graduates })
 {
+    const graduateCard = graduates.map((graduate) =>
+    {
+        return <ProfileCardComponent key={graduate._id} graduate={graduate} />
+    })
+
     return (
 
-        <Stack direction="horizontal" gap={3}>
+
+        // <Container fluid>
+        //     <Row>
+        <div className="container-space-between">
+            <div className="row row-cols-1 row-cols-md-2 g-4">
+
+                {graduateCard}
+
+            </div>
+        </div>
+        //     </Row>
+        // </Container>
 
 
-
-
-            <ProfileCardComponent />
-
-
-        </Stack>
     );
 }
 
