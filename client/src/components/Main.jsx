@@ -1,9 +1,24 @@
-import CardsComponent from "./CardsComponent";
+import { useEffect, useState } from "react";
 
 import FilterComponent from "./FilterComponent";
 import ProfileCardComponent from "./ProfileCardComponent";
 function Main()
 {
+    const [graduates, setGraduates] = useState(null);
+    useEffect(() =>
+    {
+        const getGraduates = async () =>
+        {
+            const response = await fetch('http://localhost:4000/graduates')
+            const graduatesData = await response.json();
+            if (response.ok)
+            {
+                setGraduates(graduatesData);
+                console.log(graduatesData);
+            }
+        }
+        getGraduates();
+    }, [])
     return (
         <div style={{ position: 'center' }}>
             <div className="header" style={{ margin: '30px' }}>
@@ -18,11 +33,12 @@ function Main()
                     <FilterComponent />
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-around', padding: '20px', borderRadius: '5px', backgroundColor: "white" }}>
+                    {graduates && graduates.map((graduate) =>
+                    {
+                        return <ProfileCardComponent key={graduate._id} graduate={graduate} />
+                    })}
 
-                    <ProfileCardComponent />
-                    <ProfileCardComponent />
-                    <ProfileCardComponent />
-                    <ProfileCardComponent />
+
                 </div>
 
             </div >

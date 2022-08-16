@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-function ProfileCardComponent()
+function ProfileCardComponent({ graduate })
 {
     return (
         <Card style={{ width: '18rem' }}>
@@ -12,20 +12,20 @@ function ProfileCardComponent()
             <Card.Body>
                 <div className="img+title" style={{ display: 'flex', justifyContent: 'flex-start' }}>
                     <Card.Img variant="top" src={logo} style={{ width: '100px', padding: '10px', borderRadius: '200px' }} />
-                    <Card.Title>John Maybe <br />  <p style={{ color: 'lightgrey', fontSize: '15px' }}>he/him</p> </Card.Title>
+                    <Card.Title>{graduate.firstName} {graduate.lastName}<br />  <p style={{ color: 'lightgrey', fontSize: '15px' }}>{graduate.pronouns}</p> </Card.Title>
 
                 </div>
 
                 <Card.Text>
                     <div className="graduation">
                         <h5>Digital Futures graduation</h5>
-                        <p>Sept 2022</p>
+                        <p>{graduate.dfGraduationDate}</p>
                         <br />
                         <br />
                     </div>
                     <div className='Education'>
-                        <h5>Degree</h5>
-                        <p>University</p>
+                        <h5>{graduate.universityDegree}</h5>
+                        <p>{graduate.university}</p>
                     </div>
 
                     <hr />
