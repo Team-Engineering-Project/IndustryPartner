@@ -1,16 +1,15 @@
 import CardsComponent from "./CardsComponent";
 import FilterComponent from "./FilterComponent";
 import ProfileCardComponent from "./ProfileCardComponent";
-function Main() {
+function Main()
+{
     return (
         <div style={{ position: 'center' }}>
-            <div>
-                <div className="header" style={{ margin: '30px' }}>
+            <div className="header" style={{ margin: '30px' }}>
 
-                    <h1>Talent spotlight</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ipsam perspiciatis quod eligendi provident eos molestias nam ea, nostrum, facilis eum rem. Cupiditate quaerat modi beatae incidunt laudantium officiis nobis!</p>
+                <h1>Talent spotlight</h1>
+                <p>At Digital Futures we're focused on improving diversity within the technology sector, helping organisations build high-performing technology teams representative of society. Below is a selection of our engineers who have recently graduated from the Digital Academy and are immediately available to join your organisation </p>
 
-                </div>
 
                 <br>
                 </br>
