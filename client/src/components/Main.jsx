@@ -1,4 +1,5 @@
 import CardsComponent from "./CardsComponent";
+
 import FilterComponent from "./FilterComponent";
 import ProfileCardComponent from "./ProfileCardComponent";
 function Main()
@@ -26,9 +27,8 @@ function Main()
 
             </div >
         </div >
+    )
 
-
-    );
 }
 
 export default Main;

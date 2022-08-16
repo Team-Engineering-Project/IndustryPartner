@@ -1,9 +1,11 @@
+
 import logo from './logo.png'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-function ProfileCardComponent() {
+function ProfileCardComponent()
+{
     return (
         <Card style={{ width: '18rem' }}>
             {/* <Card.Img variant="top" src={logo} style={{ width: '100px', padding: '10px', borderRadius: '200px' }} /> */}
@@ -32,7 +34,7 @@ function ProfileCardComponent() {
                 <Button className='viewProfileButton' variant="primary" style={{ alignItems: 'centergit' }}>View profile</Button>
             </Card.Body>
         </Card >
-    );
+    )
 }
 
 export default ProfileCardComponent;

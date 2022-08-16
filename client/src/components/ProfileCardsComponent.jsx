@@ -1,6 +1,8 @@
+
 import ProfileCardComponent from "./ProfileCardComponent";
 
-function ProfileCardsComponent() {
+function ProfileCardsComponent()
+{
     return (
         <>
             <ProfileCardComponent />
