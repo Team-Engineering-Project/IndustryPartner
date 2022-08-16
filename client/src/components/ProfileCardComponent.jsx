@@ -13,7 +13,7 @@ function ProfileCardComponent() {
                     <p className='Graduation'>march 2020</p>
                     <p className='Education'>masters</p>
                 </Card.Text>
-                <Button variant="primary">View profile</Button>
+                {/* <Button className='viewProfileButton' variant="primary">View profile</Button> */}
             </Card.Body>
         </Card >
     );

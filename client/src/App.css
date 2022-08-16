@@ -4,4 +4,11 @@
 
 body {
   background-color: rgb(224, 230, 230);
+  padding: 200px;
+}
+
+.viewProfileButton {
+  border: none;
+  background-color: white;
+  color: blue;
 }
