@@ -57,3 +57,20 @@ body {
   background-color: #0064dc;
   width: 100%;
 }
+
+/* 
+.container {
+  display: grid;
+} */
+
+.container1 {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 60px 1fr 60px;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header"
+    "content content"
+    "footer footer";
+}

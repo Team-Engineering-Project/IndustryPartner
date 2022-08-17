@@ -30,10 +30,11 @@ function Main()
     }
 
     return (
-        <div style={{ position: 'center' }}>
-            <div className="header" style={{ margin: '30px' }}>
+        <div style={{ display: 'grid', placeContent: 'center' }}>
+            <div className="header" style={{ maxWidth: '980px' }}>
 
                 <h1>Talent spotlight</h1>
+<<<<<<< Updated upstream
                 <p>At Digital Futures we're focused on improving diversity within the technology sector, helping organisations build high-performing technology teams representative of society. Below is a selection of our engineers who have recently graduated from the Digital Academy and are immediately available to join your organisation </p>
                 <br>
                 </br>
@@ -46,11 +47,32 @@ function Main()
                         return <ProfileCardComponent key={graduate._id} graduate={graduate} />
                     })}
 
+=======
+                <p style={{ color: "grey" }}>At Digital Futures we're focused on improving diversity within the technology sector, helping organisations build high-performing technology teams representative of society. Below is a selection of our engineers who have recently graduated from the Digital Academy and are immediately available to join your organisation </p>
 
-                </div>
 
-            </div >
+                <br>
+                </br>
+
+            </div>
+            <div style={{ justifyContent: 'left', padding: '45px', borderRadius: '5px', backgroundColor: "white" }}>
+                <p style={{ color: "grey" }}>Engineer type:</p>
+                <FilterComponent />
+
+            </div>
+
+            <div style={{ display: 'flex', justifyContent: 'space-around', padding: '20px', borderRadius: '5px', backgroundColor: "white" }}>
+                {/* {graduates && graduates.map((graduate) =>
+                    {
+                        return <ProfileCardComponent key={graduate._id} graduate={graduate} />
+                    })} */}
+                {graduates && <ProfileCardsComponent graduates={graduates} />}
+>>>>>>> Stashed changes
+
+            </div>
+
         </div >
+
     )
 
 }
