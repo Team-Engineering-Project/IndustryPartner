@@ -7,7 +7,7 @@ function Main()
 {
     const [graduates, setGraduates] = useState(null);
     const [originalGrads, setOriginalGrads] = useState(null);
-    
+
     useEffect(() =>
     {
         const getGraduates = async () =>
@@ -24,25 +24,28 @@ function Main()
         getGraduates();
     }, [])
 
-    const filterDropdown = (dfSubject) => {
-        if (dfSubject === ""){
+    const filterDropdown = (dfSubject) =>
+    {
+        if (dfSubject === "")
+        {
             setGraduates(originalGrads);
-        } else {
+        } else
+        {
             const filteredGraduates = originalGrads.filter(graduate => graduate.dfSubject === dfSubject)
             setGraduates(filteredGraduates);
         }
     }
 
     return (
-        <div style={{ display: 'grid', placeContent: 'center' }}>
+        <div style={{ display: 'grid', placeContent: 'center', paddingBottom: '30px', marginTop: '20px' }}>
             <div className="header" style={{ maxWidth: '980px' }}>
-                <h1>Talent spotlight</h1>
+                <h1 style={{ color: '#18164d' }}>Talent spotlight</h1>
                 <p style={{ color: "grey" }}>At Digital Futures we're focused on improving diversity within the technology sector, helping organisations build high-performing technology teams representative of society. Below is a selection of our engineers who have recently graduated from the Digital Academy and are immediately available to join your organisation </p>
                 <br></br>
             </div>
             <div style={{ justifyContent: 'left', padding: '45px', borderRadius: '5px', backgroundColor: "white" }}>
                 <p style={{ color: "grey" }}>Engineer type:</p>
-                <FilterComponent filterDropdown={filterDropdown}/>
+                <FilterComponent filterDropdown={filterDropdown} />
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-around', padding: '20px', borderRadius: '5px', backgroundColor: "white" }}>
                 {graduates && <ProfileCardsComponent graduates={graduates} />}

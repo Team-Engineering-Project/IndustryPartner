@@ -49,12 +49,14 @@ body {
 .logoimage {
   width: 30px;
   height: 30px;
+  margin-bottom: 3px;
+
 
 }
 
 .navbar {
 
-  background-color: #0064dc;
+  background-color: #18164d;
   width: 100%;
 }
 
