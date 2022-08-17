@@ -33,7 +33,7 @@ describe(`App component tests`, () => {
 
         test(`It should render the Footer component`, () => {
             const footerElement = screen.getByTestId(`Footer`);
-            expect(mainElement).toBeInTheDocument();
+            expect(footerElement).toBeInTheDocument();
         });
     });
 });
