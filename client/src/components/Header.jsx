@@ -22,7 +22,7 @@ function Header()
                             {/* <a class="nav-item nav-link 1" href="#"> Talk to us {/*<span class="sr-only">(current)</span></a>*/}
                             {/* <a class="nav-item nav-link 2" href="#"> Home button </a> */}
                             {/* <a class="nav-item nav-link 3" href="#"> Your requirements </a> */}
-                            <a class="nav-item nav-link 4" href="#" > Talk to us</a>
+                            <a class="nav-item nav-link 4" href="https://digitalfutures.com/contact/" > Talk to us</a>
                             <a class="nav-item nav-link 4" href="#"> Talent spotlight </a>
 
                         </div>

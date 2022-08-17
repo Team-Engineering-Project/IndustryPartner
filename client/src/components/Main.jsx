@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 
 import FilterComponent from "./FilterComponent";
-import ProfileCardsComponent from "./ProfileCardsComponent";
+import ProfileCardComponent from "./ProfileCardComponent";
 
 function Main()
 {
     const [graduates, setGraduates] = useState(null);
+    const [originalGrads, setOriginalGrads] = useState(null);
+
     useEffect(() =>
     {
         const getGraduates = async () =>
@@ -15,24 +17,51 @@ function Main()
             if (response.ok)
             {
                 setGraduates(graduatesData);
-                console.log(graduatesData);
+                setOriginalGrads(graduatesData);
+                //console.log(graduatesData);
             }
         }
         getGraduates();
     }, [])
+
+    const filterDropdown = (dfSubject) =>
+    {
+        const filteredGraduates = originalGrads.filter(graduate => graduate.dfSubject === dfSubject)
+        setGraduates(filteredGraduates)
+    }
+
     return (
-        <div style={{ position: 'center' }}>
-            <div className="header" style={{ margin: '30px' }}>
+        <div style={{ display: 'grid', placeContent: 'center' }}>
+            <div className="header" style={{ maxWidth: '980px' }}>
 
                 <h1>Talent spotlight</h1>
+
                 <p>At Digital Futures we're focused on improving diversity within the technology sector, helping organisations build high-performing technology teams representative of society. Below is a selection of our engineers who have recently graduated from the Digital Academy and are immediately available to join your organisation </p>
-
-
                 <br>
                 </br>
                 <div style={{ display: 'flex', justifyContent: 'left', padding: '40px', borderRadius: '5px', backgroundColor: "white", }}>
-                    <FilterComponent />
+                    <FilterComponent filterDropdown={filterDropdown} />
                 </div>
+                <div style={{ display: 'flex', justifyContent: 'space-around', padding: '20px', borderRadius: '5px', backgroundColor: "white" }}>
+                    {graduates && graduates.map((graduate) =>
+                    {
+                        return <ProfileCardComponent key={graduate._id} graduate={graduate} />
+                    })}
+
+
+                    <p style={{ color: "grey" }}>At Digital Futures we're focused on improving diversity within the technology sector, helping organisations build high-performing technology teams representative of society. Below is a selection of our engineers who have recently graduated from the Digital Academy and are immediately available to join your organisation </p>
+
+
+                    <br>
+                    </br>
+
+                </div>
+                <div style={{ justifyContent: 'left', padding: '45px', borderRadius: '5px', backgroundColor: "white" }}>
+                    <p style={{ color: "grey" }}>Engineer type:</p>
+                    <FilterComponent />
+
+                </div>
+
                 <div style={{ display: 'flex', justifyContent: 'space-around', padding: '20px', borderRadius: '5px', backgroundColor: "white" }}>
                     {/* {graduates && graduates.map((graduate) =>
                     {
@@ -40,12 +69,14 @@ function Main()
                     })} */}
                     {graduates && <ProfileCardsComponent graduates={graduates} />}
 
+
                 </div>
 
             </div >
-        </div >
-    )
+
+            )
+            
 
 }
 
-export default Main;
+            export default Main;

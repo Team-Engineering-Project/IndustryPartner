@@ -1,22 +1,26 @@
 
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
+//import Dropdown from 'react-bootstrap/Dropdown';
+//import DropdownButton from 'react-bootstrap/DropdownButton';
 
-function FilterComponent()
+function FilterComponent({ filterDropdown })
 {
     return (
         <>
 
-            <select className="form-select" aria-label="Default select example" style={{ width: '20%' }}>
-                <option selected>Select Engineering type</option>
-                <option value="1">Software Engineering</option>
-                <option value="2">Data Science</option>
-                <option value="3">Cloud Engineering</option>
-            </select>
 
-        </>
+            <select onChange={(e) => filterDropdown(e.target.value)} className="form-select" aria-label="Default select example" style={{ width: '20%' }}>
 
-    );
+                <select className="form-select" aria-label="Default select example" style={{ width: '20%' }}>
+
+                    <option selected>Select Engineering type</option>
+                    <option value="SE">Software Engineering</option>
+                    <option value="DS">Data Science</option>
+                    <option value="CE">Cloud Engineering</option>
+                </select>
+
+            </>
+
+            );
 }
 
-export default FilterComponent;
+            export default FilterComponent;

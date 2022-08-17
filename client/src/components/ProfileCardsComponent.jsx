@@ -17,11 +17,9 @@ function ProfileCardsComponent({ graduates })
 
         // <Container fluid>
         //     <Row>
-        <div className="container-space-between">
-            <div className="row row-cols-1 row-cols-md-2 g-4">
-
+        <div className="container" >
+            <div className="row row-cols-1 row-cols-md-2 g-4 m-3" >
                 {graduateCard}
-
             </div>
         </div>
         //     </Row>
