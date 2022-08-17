@@ -4,10 +4,6 @@ import FilterComponent from "./FilterComponent";
 
 function CardComponent()
 {
-    return
-
-
-
     return (
         <>
             <FilterComponent />
