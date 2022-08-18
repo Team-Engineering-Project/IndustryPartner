@@ -32,8 +32,8 @@ describe(`ProfileCardComponent tests`, () => {
         })
 
         test(`should render an <img> tag with the src attribute 'logo.png'`, () => {
-            const profileImg = screen.getByRole('img');
-            expect(profileImg).toHaveAttribute('src', 'logo.png');
+            const profileImg = screen.getAllByRole('img');
+            expect(profileImg[0]).toHaveAttribute('src', 'logo.png');
         })
 
     })
