@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import FilterComponent from "./FilterComponent";
 import ProfileCardsComponent from "./ProfileCardsComponent";
 
@@ -18,20 +17,20 @@ function Main()
             {
                 setGraduates(graduatesData);
                 setOriginalGrads(graduatesData);
-                //console.log(graduatesData);
             }
         }
         getGraduates();
     }, [])
 
-    const filterDropdown = (dfSubject) =>
+    const filterDropdown = (dfSubjectSelected) =>
     {
-        if (dfSubject === "")
+        if (dfSubjectSelected === "")
         {
+            //rahmxd-note to self, look for better solution!
             setGraduates(originalGrads);
         } else
         {
-            const filteredGraduates = originalGrads.filter(graduate => graduate.dfSubject === dfSubject)
+            const filteredGraduates = originalGrads.filter(graduate => graduate.dfSubject === dfSubjectSelected)
             setGraduates(filteredGraduates);
         }
     }
@@ -43,11 +42,11 @@ function Main()
                 <p style={{ color: "grey" }}>At Digital Futures we're focused on improving diversity within the technology sector, helping organisations build high-performing technology teams representative of society. Below is a selection of our engineers who have recently graduated from the Digital Academy and are immediately available to join your organisation </p>
                 <br></br>
             </div>
-            <div style={{ justifyContent: 'left', padding: '45px', borderRadius: '5px', backgroundColor: "white" }}>
+            <div style={{ justifyContent: 'left', padding: '45px 45px 0px 45px', borderRadius: '5px', backgroundColor: "white" }}>
                 <p style={{ color: "grey" }}>Engineer type:</p>
                 <FilterComponent filterDropdown={filterDropdown} />
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-around', padding: '20px', borderRadius: '5px', backgroundColor: "white" }}>
+            <div style={{ display: 'flex', justifyContent: 'space-around', padding: '0px 20px 20px 20px', borderRadius: '5px', backgroundColor: "white" }}>
                 {graduates && <ProfileCardsComponent graduates={graduates} />}
             </div>
 

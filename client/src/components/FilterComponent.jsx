@@ -6,7 +6,6 @@ function FilterComponent({filterDropdown})
 {
     return (
         <>
-
             <select onChange={(e)=>filterDropdown(e.target.value)} className="form-select" aria-label="Default select example" style={{ width: '20%' }}>
                 <option value="" selected>Select Engineering type</option>
                 <option value="SE">Software Engineering</option>
