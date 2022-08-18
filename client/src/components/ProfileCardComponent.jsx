@@ -19,12 +19,12 @@ function ProfileCardComponent({ graduate }) {
                     <div className="graduation">
                         <Card.Img src={graduationIcon} style={{ width: '10%', height: 'auto'}}/>
                         <h5 style={{display: 'inline', paddingLeft:'10px', fontSize: '1rem'}}>Digital Futures graduation</h5>
-                        <p style={{color:'grey', fontSize: '1rem'}}>{graduate.dfGraduationDate}</p>
+                        <p style={{paddingLeft: '2.2em', color:'grey', fontSize: '1rem'}}>{graduate.dfGraduationDate}</p>
                     </div>
                     <div className='Education'>
                         <Card.Img src={degreeIcon} style={{ width: '8%', height: 'auto'}}/>
-                        <h5 style={{display: 'inline', paddingLeft:'10px', fontSize: '1rem'}} >{graduate.universityDegree}</h5>
-                        <p style={{color:'grey', fontSize: '1rem'}}>{graduate.university}</p>
+                        <h5 style={{display: 'inline', paddingLeft:'12px', fontSize: '1rem'}} >{graduate.universityDegree}</h5>
+                        <p style={{paddingLeft: '2.05em', color:'grey', fontSize: '1rem'}}>{graduate.university}</p>
                     </div>
                     <hr />
                 </Card.Text>
