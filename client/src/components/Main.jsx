@@ -49,7 +49,7 @@ function Main()
             <div style={{ display: 'flex', justifyContent: 'space-around', padding: '0px 20px 20px 20px', borderRadius: '5px', backgroundColor: "white" }}>
                 {graduates && <ProfileCardsComponent graduates={graduates} />}
             </div>
-
+            
         </div >
 
     )
