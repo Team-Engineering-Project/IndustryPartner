@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function ProfileCardComponent({ graduate }) {
     return (
-        <Card style={{ width: '18rem', marginRight: 'auto'}}>
+        <Card style={{ minHeight: '25rem' ,width: '18rem', marginRight: 'auto'}}>
             {/* <Card.Img variant="top" src={logo} style={{ width: '100px', padding: '10px', borderRadius: '200px' }} /> */}
             <Card.Body style={{ paddingLeft:'3px', paddingRight:'3px'}}>
                 <div className="img+title" style={{ display: 'flex', justifyContent: 'flex-start' }}>
@@ -26,7 +26,7 @@ function ProfileCardComponent({ graduate }) {
                         <h5 style={{display: 'inline', paddingLeft:'12px', fontSize: '1rem'}} >{graduate.universityDegree}</h5>
                         <p style={{paddingLeft: '2.05em', color:'grey', fontSize: '1rem'}}>{graduate.university}</p>
                     </div>
-                    <hr />
+                    <hr className='footer' style={{width:'16em'}}/>
                 </Card.Text>
                 {/* <Button className='viewProfileButton' variant="primary" style={{ alignItems: 'centergit' }}>View profile</Button> */}
             </Card.Body>
