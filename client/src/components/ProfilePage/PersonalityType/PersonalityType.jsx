@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card';
 
-const PersonalityType = () => {
+const PersonalityType = ({ personality }) => {
 
     return (
         <div className='row'>
@@ -10,7 +10,8 @@ const PersonalityType = () => {
                         Personality Type
                     </Card.Title>
                     <Card.Text>
-
+                        <p>Type: {personality.type}</p>
+                        <p>{personality.description}</p>
                     </Card.Text>
                 </Card.Body>
             </Card>

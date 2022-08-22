@@ -18,7 +18,7 @@ const ProfileContainer = () => {
             <div className="row justify-content-center">
                 <div className="col-10">
                     <Headline />
-                    <PersonalityType PersonalityType={graduate.personalityType} />
+                    <PersonalityType personality={graduate.personalityType} />
                     <Diligence diligence={graduate.diligence} />
                     <Qualifications qualifications={graduate.qualifications} />
                     <Achievements achievements={graduate.achievements} />

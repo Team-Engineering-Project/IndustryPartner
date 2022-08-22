@@ -5,15 +5,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 
 
-function Header()
-{
+function Header() {
     return (
         <>
 
             <div className="Header-Comp">
             </div>
 
-            <nav class="navbar navbar-expand-sm navbar-dark flex-sm-nowrap flex-wrap" style={{ width: '100%' }}>
+            <nav className="navbar navbar-expand-sm navbar-dark flex-sm-nowrap flex-wrap" style={{ width: '100%' }}>
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/">
                         <img src={logo3}

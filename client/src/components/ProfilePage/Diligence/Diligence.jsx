@@ -1,9 +1,9 @@
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import testData from '../../../utils/testData/testData.js'
-const graduate = testData.graduate;
+// import testData from '../../../utils/testData/testData.js'
+// const graduate = testData.graduate;
 
-function Diligence() {
+function Diligence({ diligence }) {
 
 
 
@@ -18,15 +18,11 @@ function Diligence() {
                         <Card.Title>Due Diligence Checks</Card.Title>
                     </div>
                     <Card.Text>
-                        {graduate.diligence.disclosure && <p> disclosure passed <p /></p>}
-                    </Card.Text>
-
-                    <Card.Text>
-                        {graduate.diligence.credit && <p> credit passed </p>}
-                    </Card.Text>
-
-                    <Card.Text>
-                        {graduate.diligence.rightToWork && <p> right to work passed </p>}
+                        {diligence.disclosure && <p> Disclosure check passed </p>}
+                        {diligence.rightToWork && <p> Right to work check passed</p>}
+                        {diligence.identity && <p> Identity check passed</p>}
+                        {diligence.education && <p>Education check passed</p>}
+                        {diligence.credit && <p> Credit check passed </p>}
                     </Card.Text>
 
                 </Card.Body>
