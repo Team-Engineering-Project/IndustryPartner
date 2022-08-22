@@ -13,7 +13,7 @@ const StartComponent = () => {
             </div>
             <div class="main2"></div>
             <div class="footer">
-                {/* <Footer /> */}
+                <Footer />
             </div>
         </div>
     )
