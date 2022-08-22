@@ -3,17 +3,18 @@ import Footer from './Footer';
 import df from './df.jpg';
 import './test.css';
 
-const StartComponent = () =>
-{
+const StartComponent = () => {
     return (
 
-
-        <div className="container">
-            <div className="header"></div>
-            <div className="main"></div>
-            <div className="main1"></div>
-            <div className="main2"></div>
-            <div className="footer"></div>
+        <div class="container">
+            <div class="main"></div>
+            <div class="main1">
+                <Login />
+            </div>
+            <div class="main2"></div>
+            <div class="footer">
+                {/* <Footer /> */}
+            </div>
         </div>
     )
 }
