@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import ProfileCardComponent from '../components/ProfileCardComponent';
+import ProfileCardComponent from '../components/TalentSpotlight/ProfileCard/ProfileCardComponent';
 
 import testData from '../../testGraduates.js';
 
@@ -31,9 +31,9 @@ describe(`ProfileCardComponent tests`, () => {
             expect(screen.getByText(graduate.university)).toBeInTheDocument();
         })
 
-        test(`should render an <img> tag with the src attribute 'logo.png'`, () => {
+        test(`should render an <img> tag with the src attribute 'ProfileImg.png'`, () => {
             const profileImg = screen.getAllByRole('img');
-            expect(profileImg[0]).toHaveAttribute('src', 'logo.png');
+            expect(profileImg[0]).toHaveAttribute('src', 'ProfileImg.png');
         })
 
     })

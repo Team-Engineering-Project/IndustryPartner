@@ -1,12 +1,13 @@
 import { render, screen } from '@testing-library/react';
 
-import ProfileCardsComponent from '../components/ProfileCardsComponent';
+import ProfileCardsComponent from './ProfileCardsComponent';
+// '../components/ProfileCardsComponent';
 
-import testData from '../../testGraduates.js';
+import testData from '../../../../testGraduates.js';
 
 const graduates = testData.graduates;
 
-jest.mock(`../components/ProfileCardComponent`, () => () => {
+jest.mock(`../ProfileCard/ProfileCardComponent`, () => () => {
     return <mock-profilecardcomponent data-testid="ProfileCardComponent" />;
 });
 

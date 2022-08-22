@@ -1,20 +1,16 @@
 import { useEffect, useState } from "react";
-import FilterComponent from "./FilterComponent";
-import ProfileCardsComponent from "./ProfileCardsComponent";
+import FilterComponent from "../FilterComponent/FilterComponent";
+import ProfileCardsComponent from "../ProfileCardsContainer/ProfileCardsComponent";
 
-function Main()
-{
+function Main() {
     const [graduates, setGraduates] = useState(null);
     const [originalGrads, setOriginalGrads] = useState(null);
 
-    useEffect(() =>
-    {
-        const getGraduates = async () =>
-        {
+    useEffect(() => {
+        const getGraduates = async () => {
             const response = await fetch('http://localhost:4000/graduates')
             const graduatesData = await response.json();
-            if (response.ok)
-            {
+            if (response.ok) {
                 setGraduates(graduatesData);
                 setOriginalGrads(graduatesData);
             }
@@ -22,14 +18,11 @@ function Main()
         getGraduates();
     }, [])
 
-    const filterDropdown = (dfSubjectSelected) =>
-    {
-        if (dfSubjectSelected === "")
-        {
+    const filterDropdown = (dfSubjectSelected) => {
+        if (dfSubjectSelected === "") {
             //rahmxd-note to self, look for better solution!
             setGraduates(originalGrads);
-        } else
-        {
+        } else {
             const filteredGraduates = originalGrads.filter(graduate => graduate.dfSubject === dfSubjectSelected)
             setGraduates(filteredGraduates);
         }
@@ -49,7 +42,7 @@ function Main()
             <div style={{ display: 'flex', justifyContent: 'space-around', padding: '0px 20px 20px 20px', borderRadius: '5px', backgroundColor: "white" }}>
                 {graduates && <ProfileCardsComponent graduates={graduates} />}
             </div>
-            
+
         </div >
 
     )
