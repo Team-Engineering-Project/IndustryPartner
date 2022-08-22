@@ -26,6 +26,7 @@ function ProfileCardComponent({ graduate }) {
                         <h5 style={{display: 'inline', paddingLeft:'12px', fontSize: '1rem'}} >{graduate.universityDegree}</h5>
                         <p style={{paddingLeft: '2.05em', color:'grey', fontSize: '1rem'}}>{graduate.university}</p>
                     </div>
+                    {/* { graduate.OracleCertifiedAssociateScore />} */}
                     <hr className='footer' style={{width:'16em'}}/>
                 </Card.Text>
                 {/* <Button className='viewProfileButton' variant="primary" style={{ alignItems: 'centergit' }}>View profile</Button> */}
