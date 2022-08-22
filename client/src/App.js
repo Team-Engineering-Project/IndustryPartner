@@ -10,11 +10,11 @@ import StartComponent from './components/StartComponent';
 function App() {
   return (
     <>
-      {/* {<Header />} */}
-      {/* {<Main />} */}
+      {<Header />}
+      {<Main />}
       {/* <ProfileContainer /> */}
-      <StartComponent />
-      {/* <Footer /> */}
+      {/* <StartComponent /> */}
+      <Footer />
 
     </>
   );

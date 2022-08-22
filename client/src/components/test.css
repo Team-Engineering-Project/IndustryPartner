@@ -1,4 +1,4 @@
-.container {
+/* .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.9fr 0.1fr;
@@ -49,12 +49,11 @@ body {
 
 .footer {
     background-color: #18164d;
-    /* what's the color ? thank you !!!
-     */
+    what's the color ? thank you !!
 
-}
+} 
 
 .content {
     background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);
     background-blend-mode: screen;
-}
+} */

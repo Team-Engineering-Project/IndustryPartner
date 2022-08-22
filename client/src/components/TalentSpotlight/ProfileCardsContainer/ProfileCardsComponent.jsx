@@ -5,8 +5,10 @@ import ProfileCardComponent from "../ProfileCard/ProfileCardComponent";
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import Col from 'react-bootstrap/Col';
 
-function ProfileCardsComponent({ graduates }) {
-    const graduateCard = graduates.map((graduate) => {
+function ProfileCardsComponent({ graduates })
+{
+    const graduateCard = graduates.map((graduate) =>
+    {
         return <ProfileCardComponent key={graduate._id} graduate={graduate} />
     })
 
