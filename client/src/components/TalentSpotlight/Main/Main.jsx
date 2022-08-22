@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import FilterComponent from "./FilterComponent";
-import ProfileCardsComponent from "./ProfileCardsComponent";
+import FilterComponent from "../FilterComponent/FilterComponent";
+import ProfileCardsComponent from "../ProfileCardsContainer/ProfileCardsComponent";
 
 function Main()
 {

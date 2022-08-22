@@ -1,7 +1,7 @@
 
-import logo from './logo.png'
-import graduationIcon from './img/mortarboard-fill.svg';
-import degreeIcon from './img/briefcase-fill.svg';
+import logo from '../../img/ProfileImg.png'
+import graduationIcon from '../../img/mortarboard-fill.svg';
+import degreeIcon from '../../img/briefcase-fill.svg';
 //import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css'

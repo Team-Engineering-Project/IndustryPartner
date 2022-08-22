@@ -1,8 +1,8 @@
 import { render, screen, waitFor } from '@testing-library/react';
 
-import Main from '../components/Main';
+import Main from './Main';
 
-jest.mock(`../components/Main`, () => () => {
+jest.mock(`./Main`, () => () => {
     return <mock-profilecardscomponent data-testid="ProfileCardsComponent" />;
 })
 

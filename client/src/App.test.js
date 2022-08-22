@@ -1,15 +1,15 @@
 import { render, screen } from '@testing-library/react';
-import App from '../App';
+import App from './App';
 
-jest.mock(`../components/Header`, () => () => {
+jest.mock(`./components/Header`, () => () => {
     return <mock-header data-testid="Header" />;
 });
 
-jest.mock(`../components/Main`, () => () => {
+jest.mock(`./components/TalentSpotlight/Main/Main`, () => () => {
     return <mock-main data-testid="Main" />;
 });
 
-jest.mock(`../components/Footer`, () => () => {
+jest.mock(`./components/Footer`, () => () => {
     return <mock-footer data-testid="Footer" />;
 });
 
