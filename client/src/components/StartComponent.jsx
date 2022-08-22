@@ -6,13 +6,15 @@ import './test.css';
 const StartComponent = () => {
     return (
 
-        <div class="container">
-            <div class="main"></div>
-            <div class="main1">
-                <Login />
+        <div className="container">
+            <div className="main"></div>
+            <div className="main1">
+                <article>
+                    <Login />
+                </article>
             </div>
-            <div class="main2"></div>
-            <div class="footer">
+            <div className="main2"></div>
+            <div className="footer">
                 <Footer />
             </div>
         </div>

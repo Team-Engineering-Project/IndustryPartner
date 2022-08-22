@@ -5,8 +5,7 @@ import React from 'react';
 import Header from '../src/components/Header';
 import StartComponent from './components/StartComponent';
 
-function App()
-{
+function App() {
   return (
     <>
       {/* <Header />

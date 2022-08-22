@@ -4,8 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-function ProfileCardComponent({ graduate })
-{
+function ProfileCardComponent({ graduate }) {
     return (
         <Card style={{ width: '18rem', marginRight: '10px' }}>
             {/* <Card.Img variant="top" src={logo} style={{ width: '100px', padding: '10px', borderRadius: '200px' }} /> */}

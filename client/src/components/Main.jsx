@@ -3,19 +3,15 @@ import { useEffect, useState } from "react";
 import FilterComponent from "./FilterComponent";
 import ProfileCardsComponent from "./ProfileCardsComponent";
 
-function Main()
-{
+function Main() {
     const [graduates, setGraduates] = useState(null);
     const [originalGrads, setOriginalGrads] = useState(null);
 
-    useEffect(() =>
-    {
-        const getGraduates = async () =>
-        {
+    useEffect(() => {
+        const getGraduates = async () => {
             const response = await fetch('http://localhost:4000/graduates')
             const graduatesData = await response.json();
-            if (response.ok)
-            {
+            if (response.ok) {
                 setGraduates(graduatesData);
                 setOriginalGrads(graduatesData);
                 //console.log(graduatesData);
@@ -24,13 +20,10 @@ function Main()
         getGraduates();
     }, [])
 
-    const filterDropdown = (dfSubject) =>
-    {
-        if (dfSubject === "")
-        {
+    const filterDropdown = (dfSubject) => {
+        if (dfSubject === "") {
             setGraduates(originalGrads);
-        } else
-        {
+        } else {
             const filteredGraduates = originalGrads.filter(graduate => graduate.dfSubject === dfSubject)
             setGraduates(filteredGraduates);
         }
