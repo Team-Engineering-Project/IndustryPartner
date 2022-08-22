@@ -9,9 +9,9 @@ function App()
 {
   return (
     <>
-      <Header />
-      <Main />
-      {/* <StartComponent /> */}
+      {/* <Header />
+      <Main /> */}
+      <StartComponent />
 
     </>
   );
