@@ -5,14 +5,16 @@ import Header from '../src/components/Header';
 import Footer from '../src/components/Footer';
 import ProfileContainer from './components/ProfilePage/ProfileContainer/ProfileContainer';
 import StartComponent from './components/StartComponent';
+import Login from './components/Login';
 
 
 function App() {
   return (
     <>
       {<Header />}
-      {<Main />}
+      {/* {<Main />} */}
       {/* <ProfileContainer /> */}
+      <Login/>
       {/* <StartComponent /> */}
       <Footer />
 
