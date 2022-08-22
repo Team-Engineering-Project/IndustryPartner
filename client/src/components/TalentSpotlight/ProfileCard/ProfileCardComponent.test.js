@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 
-import ProfileCardComponent from '../components/TalentSpotlight/ProfileCard/ProfileCardComponent';
+import ProfileCardComponent from './ProfileCardComponent';
 
-import testData from '../../testGraduates.js';
+import testData from '../../../../testGraduates.js';
 
 const graduate = testData.graduates[0]
 
