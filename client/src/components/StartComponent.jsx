@@ -3,14 +3,14 @@ import Footer from './Footer';
 import df from './df.jpg';
 import './test.css';
 
-const StartComponent = () => {
+const StartComponent = ({ setUser }) => {
     return (
 
         <div className="container">
             <div className="main"></div>
             <div className="main1">
                 <article>
-                    <Login />
+                    <Login setUser={setUser} />
                 </article>
             </div>
             <div className="main2"></div>
