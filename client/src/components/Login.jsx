@@ -1,35 +1,55 @@
-import bootstrap from 'bootstrap';
-import dfLogo from './logo3.png';
+//import bootstrap from 'bootstrap';
+// import dfLogo from './logo3.png';
+import dfLogo from './df.jpg'
 const Login = () => {
     return (
         <>
-            <section>
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col text-black">
-                            {/* <h1>Digital Futures</h1> */}
-                            <div className="px-4 ms-xl-4">
-                                <img src={dfLogo} alt="" />
-                                <i className="fas fa-crow fa-2x me-3 pt-5 mt-xl-4" style={{ color: '#709085' }}></i>
-                                <span className="h1 fw-bold mb-0">Digital Futures</span>
+            <section class="vh-100">
+                <div class="container py-5 h-100">
+                    <div class="row d-flex justify-content-center align-items-center h-100" >
+                    <div class="col col-xl-10" >
+                        <div class="card" style={{borderRadius: '25px'}} >
+                        <div class="row g-0">
+                            <div class="col-md-6 col-lg-5 d-none d-md-block">
+                            <img src={dfLogo} alt="login form" class="img-fluid" style={{height: '100%', width: '100%', objectFit: 'cover'}} />
                             </div>
-                            <div className="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
-                                <form style={{ width: '35rem' }}>
-                                    <h3 className="fw-normal mb-3 pb-3" style={{ letterSpacing: '1px' }}>Log in</h3>
-                                    <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
-                                        <label for="floatingInput">Email address</label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
-                                        <label for="floatingPassword">Password</label>
-                                    </div>
-                                    <div className="pt-1 mb-4">
-                                        <button className="btn btn-info btn-lg btn-block" type="button">Login</button>
-                                    </div>
-                                </form>
+                            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                            <div class="card-body p-4 p-lg-5 text-black">
+
+                            <form>
+
+                                <div class="d-flex align-items-center mb-3 pb-1">
+                                    <i class="fas fa-cubes fa-2x me-3" ></i>
+                                    <span class="h1 fw-bold mb-0">DFX</span>
+                                </div>
+
+                                <h5 class="fw-normal mb-3 pb-3" >Sign into your account</h5>
+
+                                <div class="form-outline mb-4">
+                                    <input type="email" id="form2Example17" class="form-control form-control-lg" placeholder='email address'/>
+                                    {/* <label class="form-label" for="form2Example17">Email address</label> */}
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <input type="password" id="form2Example27" class="form-control form-control-lg" placeholder='password'/>
+                                    {/* <label class="form-label" for="form2Example27">Password</label> */}
+                                </div>
+
+                                <div class="pt-1 mb-4">
+                                    <button class="btn btn-dark btn-lg btn-block" type="button" style={{width: '100%'}}>Login</button>
+                                </div>
+
+                                <a class="small text-muted" href="#!">Forgot password?</a>
+                                <p class="mb-5 pb-lg-2" >Don't have an account? <a href="#!">Register here</a></p>
+                                <a href="#!" class="small text-muted">Terms of use.</a>
+                                <a href="#!" class="small text-muted">Privacy policy</a>
+                            </form>
+
+                            </div>
                             </div>
                         </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </section>
@@ -77,6 +97,8 @@ const Login = () => {
         //         </div>
         //     </div>
         // </section>
+
+        
 
     )
 }
