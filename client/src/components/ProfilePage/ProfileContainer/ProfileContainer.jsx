@@ -13,11 +13,22 @@ const graduate = testData.graduate;
 
 const ProfileContainer = () => {
 
+
+    const headlineInfo = {
+        name: `${graduate.firstName} ${graduate.lastName}`,
+        image: graduate.profileImage,
+        pronouns: graduate.pronouns,
+        headline: graduate.headline,
+        socialMedia: graduate.socialMedia,
+        dfSubject: graduate.dfSubject,
+        dfGraduationDate: graduate.dfGraduationDate
+    };
+
     return (
         <div className="container-fluid" >
             <div className="row justify-content-center">
                 <div className="col-10">
-                    <Headline />
+                    <Headline headlineInfo={headlineInfo} />
                     <PersonalityType personality={graduate.personalityType} />
                     <Diligence diligence={graduate.diligence} />
                     <Qualifications qualifications={graduate.qualifications} />
