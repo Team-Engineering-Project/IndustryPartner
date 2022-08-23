@@ -13,8 +13,8 @@ function App() {
     <>
       {<Header />}
       {/* {<Main />} */}
-      {/* <ProfileContainer /> */}
-      <Login/>
+      <ProfileContainer />
+      {/* <Login/> */}
       {/* <StartComponent /> */}
       <Footer />
 

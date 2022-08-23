@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 const PersonalityType = ({ personality }) => {
 
     return (
-        <div className='row'>
+        <div className='personalityType'>
             <Card>
                 <Card.Body>
                     <Card.Title>

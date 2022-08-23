@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Headline({ headlineInfo }) {
     return (
 
-        <div className='row'>
+        <div className='headlineInfo'>
             <Card /* style={{ width: '30rem', marginRight: 'auto' }} */>
                 <Card.Img variant="top" src={ProfileImg} style={{ width: '100px', padding: '10px', borderRadius: '200px' }} />
                 <Card.Body style={{ paddingLeft: '3px', paddingRight: '3px' }}>
