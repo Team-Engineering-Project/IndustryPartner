@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import FilterComponent from "./FilterComponent";
 import ProfileCardsComponent from "./ProfileCardsComponent";
 
+
 function Main() {
     const [graduates, setGraduates] = useState(null);
     const [originalGrads, setOriginalGrads] = useState(null);
