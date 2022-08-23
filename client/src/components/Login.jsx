@@ -31,8 +31,6 @@ const Login = ({ setUser: setLoginUser }) => {
         setLoggedIn(res.data.user ? true : false);
     }
 
-
-
     return (
         <>
             {loggedIn && <Navigate to="/" />}

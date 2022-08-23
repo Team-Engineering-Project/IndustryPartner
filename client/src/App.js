@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      {/* <Router>
+      <Router>
         <Routes>
           <Route path="/" element={
             user && user._id ? <Main user={user} setUser={setUser} />
@@ -22,11 +22,11 @@ function App() {
           } />
           <Route path="/login" element={<StartComponent setUser={setUser} />} />
           <Route path="/main" element={<Main />} />
-          
-        </Routes>
-      </Router> */}
 
-      <Main />
+        </Routes>
+      </Router>
+
+      {/* <Main /> */}
     </>
   );
 }
