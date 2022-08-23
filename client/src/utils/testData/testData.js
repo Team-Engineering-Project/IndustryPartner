@@ -23,8 +23,8 @@ const testData = {
         },
 
         socialMedia: {
-            github: "github/myurl",
-            linkedIn: "linkedin/myurl"
+            github: "http://www.github.com",
+            linkedIn: "http://www.linkedin.com"
         },
 
         personalityType: {
