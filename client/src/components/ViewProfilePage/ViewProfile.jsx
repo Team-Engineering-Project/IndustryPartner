@@ -19,9 +19,9 @@ const ViewProfile = () => {
       <div className="container py-5">
         <div className="row">
           {/* left column */}
-          <div className="col-lg-3" >
+          <div className="col-lg-3">
             <ProfileCard graduate={graduate} />
-            <DueDiligenceCard graduate={graduate} />
+            <DueDiligenceCard diligence={graduate.diligence} />
           </div>
 
           {/* middle column */}
@@ -37,13 +37,15 @@ const ViewProfile = () => {
               <QualificationsCard qualifications={graduate.qualifications} />
             </div>
             <div className="row">
-              <AchievementsCard />
+
+            </div >
+            <div className='row'>
+              <AchievementsCard achievements={graduate.achievements} />
             </div>
             <div className='row'>
-              <FeedbackCard />
+              <FeedbackCard feedback={graduate.feedback} />
             </div>
-          </div>
-
+          </div >
         </div >
       </div >
     </>
