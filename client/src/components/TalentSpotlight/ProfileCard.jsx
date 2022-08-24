@@ -32,6 +32,7 @@ function ProfileCard({ graduate }) {
             </Card.Body>
             <Card.Footer>
                 <Button className='viewProfileButton' variant="primary" style={{ alignItems: 'centergit', width: '100%' }}>View profile</Button>
+               
             </Card.Footer>
         </Card >
     )

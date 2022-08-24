@@ -11,6 +11,8 @@ import QualificationsCard from './QualificationsCard';
 import AchievementsCard from './AchievementsCard';
 import FeedbackCard from './FeedbackCard';
 import FlairCard from './FlairCard.jsx';
+import Header from '../Header.jsx';
+import Footer from '../Footer.jsx';
 const graduate = testData.graduate;
 
 
@@ -19,6 +21,7 @@ const ViewProfile = () => {
   
   return (
     <>
+      <Header/>
       <div className="container py-5">
         <div className="row">
           {/* left column */}
@@ -50,6 +53,7 @@ const ViewProfile = () => {
           </div >
         </div >
       </div >
+      <Footer />
     </>
   )
 }

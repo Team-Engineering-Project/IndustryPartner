@@ -1,4 +1,4 @@
-/* .container {
+ .container1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.9fr 0.1fr;
@@ -27,7 +27,7 @@ body {
     background-color: f8f8f8;
 }
 
-.container>* {
+.container1>* {
     display: grid;
     place-content: center;
     border-radius: 5px;
@@ -35,7 +35,7 @@ body {
     box-shadow: 0 1px 6px 0 hsl(0, 0%, 0%, 20%);
 }
 
-.container {
+.container1 {
     max-width: 100%;
     height: calc(100vh);
     margin: 0 auto;
@@ -45,16 +45,15 @@ body {
     background-image: url(df.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-} */
+}
 
-/* .footer {
+.footer {
     background-color: #18164d;
-    what's the color ? thank you !!!
     
 
-} */
+}
 
-/* .main1 {
+.main1 {
     background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);
     background-blend-mode: screen;
 }
@@ -62,4 +61,4 @@ body {
 .btn-colour {
     background-color: #18164d;
     color: white;
-} */
+} 

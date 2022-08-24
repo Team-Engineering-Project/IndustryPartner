@@ -1,18 +1,23 @@
 import React from "react";
 import logo3 from './logo3.png'
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
-
+import  Main from './TalentSpotlight/Main.jsx'
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useCookies } from "react-cookie";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
 
 function Header() {
+     const [cookies, setCookie, removeCookie] = useCookies([]);
+    const logOut = () => {
+    removeCookie("jwt");
+    };
+    
     return (
         <>
-
-            <div className="Header-Comp">
-            </div>
-
-            <nav className="navbar navbar-expand-sm navbar-dark flex-sm-nowrap flex-wrap" style={{ width: '100%' }}>
+            <nav className="navbar navbar-expand-sm navbar-dark flex-sm-nowrap flex-wrap">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">
                         <img src={logo3}
@@ -25,6 +30,7 @@ function Header() {
                             {/* <a class="nav-item nav-link 3" href="#"> Your requirements </a> */}
                             <a className="nav-item nav-link 4" href="https://digitalfutures.com/contact/" > Talk to us</a>
                             <a className="nav-item nav-link 4" href="/"> Talent spotlight </a>
+                            <a onClick={logOut} className="nav-item nav-link 4" href="/">Log out </a>
 
                         </div>
                     </div>
