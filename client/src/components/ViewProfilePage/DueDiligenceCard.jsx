@@ -8,23 +8,21 @@ const BadgesCard = ({ diligence }) => {
 
             <h5 className="card-header text-center" style={{ color: '#18164d' }}>Due Diligence Checks</h5>
             <div className="card-body p-0">
-                <ul className="list-group list-group-flush rounded-3">
-                    <li className="list-group-item d-flex justify-content-between align-items-center p-3">
-                        <p>{diligence.disclosure ? <img src={greenTick}></img> : <img src={redReject}></img>} Disclosure</p>
-                    </li>
-                    <li className="list-group-item d-flex justify-content-between align-items-center p-3">
-                        <p className="mb-0">{diligence.rightToWork ? <img src={greenTick}></img> : <img src={redReject}></img>} Right to work</p>
-                    </li>
-                    <li className="list-group-item d-flex justify-content-between align-items-center p-3">
-                        <p className="mb-0">{diligence.identity ? <img src={greenTick}></img> : <img src={redReject}></img>} Identity</p>
-                    </li>
-                    <li className="list-group-item d-flex justify-content-between align-items-center p-3">
-                        <p className="mb-0">{diligence.education ? <img src={greenTick}></img> : <img src={redReject}></img>} Education</p>
-                    </li>
-                    <li className="list-group-item d-flex justify-content-between align-items-center p-3">
-                        <p className="mb-0">{diligence.credit ? <img src={greenTick}></img> : <img src={redReject}></img>} Credit</p>
-                    </li>
-                </ul>
+                <div className='row p-2'>
+                    <p className='mb-0'>{diligence.disclosure ? <img src={greenTick}></img> : <img src={redReject}></img>} Disclosure</p>
+                </div>
+                <div className='row p-2'>
+                    <p className="mb-0">{diligence.rightToWork ? <img src={greenTick}></img> : <img src={redReject}></img>} Right to work</p>
+                </div>
+                <div className='row p-2'>
+                    <p className="mb-0">{diligence.identity ? <img src={greenTick}></img> : <img src={redReject}></img>} Identity</p>
+                </div>
+                <div className='row p-2'>
+                    <p className="mb-0">{diligence.education ? <img src={greenTick}></img> : <img src={redReject}></img>} Education</p>
+                </div>
+                <div className='row p-2'>
+                    <p className="mb-0">{diligence.credit ? <img src={greenTick}></img> : <img src={redReject}></img>} Credit</p>
+                </div>
             </div>
         </div >
     )
