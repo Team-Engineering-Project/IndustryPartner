@@ -1,15 +1,15 @@
 
-import ProfileCardComponent from "../ProfileCard/ProfileCardComponent";
+import ProfileCard from "./ProfileCard";
 //import Container from 'react-bootstrap/Container';
 //import Row from 'react-bootstrap/Row';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import Col from 'react-bootstrap/Col';
 
-function ProfileCardsComponent({ graduates })
+function ProfileCardsContainer({ graduates })
 {
     const graduateCard = graduates.map((graduate) =>
     {
-        return <ProfileCardComponent key={graduate._id} graduate={graduate} />
+        return <ProfileCard key={graduate._id} graduate={graduate} />
     })
 
     return (
@@ -29,4 +29,4 @@ function ProfileCardsComponent({ graduates })
     );
 }
 
-export default ProfileCardsComponent;
+export default ProfileCardsContainer;

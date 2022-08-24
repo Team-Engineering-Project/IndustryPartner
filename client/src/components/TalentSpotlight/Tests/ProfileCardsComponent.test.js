@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import ProfileCardsComponent from './ProfileCardsComponent';
+import ProfileCardsComponent from '../ProfileCardsContainer/ProfileCardsComponent';
 // '../components/ProfileCardsComponent';
 
 import testData from '../../../../testGraduates.js';

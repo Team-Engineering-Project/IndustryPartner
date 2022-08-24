@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import FilterComponent from "../FilterComponent/FilterComponent";
-import ProfileCardsComponent from "../ProfileCardsContainer/ProfileCardsComponent";
+import Filter from "./Filter";
+import ProfileCardsContainer from "./ProfileCardsContainer";
 
 function Main()
 {
@@ -44,10 +44,10 @@ function Main()
             </div>
             <div style={{ justifyContent: 'left', padding: '45px 45px 0px 45px', borderRadius: '5px', backgroundColor: "white" }}>
                 <p style={{ color: "grey" }}>Engineer type:</p>
-                <FilterComponent filterDropdown={filterDropdown} />
+                <Filter filterDropdown={filterDropdown} />
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-around', padding: '0px 20px 20px 20px', borderRadius: '5px', backgroundColor: "white" }}>
-                {graduates && <ProfileCardsComponent graduates={graduates} />}
+                {graduates && <ProfileCardsContainer graduates={graduates} />}
             </div>
             
         </div >

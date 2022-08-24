@@ -1,12 +1,12 @@
 
-import logo from '../../img/ProfileImg.png'
-import graduationIcon from '../../img/mortarboard-fill.svg';
-import degreeIcon from '../../img/briefcase-fill.svg';
-//import Button from 'react-bootstrap/Button';
+import logo from './img/ProfileImg.png'
+import graduationIcon from './img/mortarboard-fill.svg';
+import degreeIcon from './img/briefcase-fill.svg';
+import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-function ProfileCardComponent({ graduate }) {
+function ProfileCard({ graduate }) {
     return (
         <Card style={{ minHeight: '25rem' ,width: '18rem', marginRight: 'auto'}}>
             {/* <Card.Img variant="top" src={logo} style={{ width: '100px', padding: '10px', borderRadius: '200px' }} /> */}
@@ -29,10 +29,12 @@ function ProfileCardComponent({ graduate }) {
                     {/* { graduate.OracleCertifiedAssociateScore />} */}
                     <hr className='footer' style={{width:'16em'}}/>
                 </Card.Text>
-                {/* <Button className='viewProfileButton' variant="primary" style={{ alignItems: 'centergit' }}>View profile</Button> */}
             </Card.Body>
+            <Card.Footer>
+                <Button className='viewProfileButton' variant="primary" style={{ alignItems: 'centergit', width: '100%' }}>View profile</Button>
+            </Card.Footer>
         </Card >
     )
 }
 
-export default ProfileCardComponent;
+export default ProfileCard;

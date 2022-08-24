@@ -1,5 +1,5 @@
 import ProfileCardsComponent from "..ProfileCardsContainer/ProfileCardsComponent";
-import FilterComponent from "../FilterComponent/FilterComponent";
+import FilterComponent from "./FilterComponent";
 
 
 function CardComponent() {
