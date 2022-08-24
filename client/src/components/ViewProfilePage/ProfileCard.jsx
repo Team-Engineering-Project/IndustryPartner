@@ -4,10 +4,14 @@ import logo from './img/ProfileImg.png'
 const ProfileCard = ({ graduate }) => {
   return (
     <div className="card mb-4">
-      <div className="card-body text-center">
+      <div className='card-header text-center'>
         <img src={logo} alt="avatar"
           className="rounded-circle img-fluid" style={{ width: '150px' }} />
-        <h5 className="my-3">{`${graduate.firstName} ${graduate.lastName}`}</h5>
+        <h3 className="my-3" style={{ color: '#18164d' }}>{`${graduate.firstName} ${graduate.lastName}`}</h3>
+
+      </div>
+
+      <div className="card-body text-center">
         <p className="text-muted mb-1">{`${graduate.pronouns}`}</p>
         <p className="text-muted mb-4">{`${graduate.headline}`} </p>
         <div className="d-flex justify-content-center mb-2">
