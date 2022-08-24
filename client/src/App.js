@@ -7,16 +7,14 @@ import Header from '../src/components/Header';
 import Footer from '../src/components/Footer';
 import ViewProfile from './components/ViewProfilePage/ViewProfile'
 import Login from './components/Login';
-import StartComponent from './components/StartComponent';
 
 function App() {
 
   const [user, setUser] = useState({})
   
-
   return (
     <>
-      <Router>
+      {/* <Router>
         <Routes>
           <Route path="/" element={
             user && user._id ? <Main user={user} setUser={setUser} />
@@ -27,7 +25,11 @@ function App() {
           <Route path="/main" element={<Main />} />
 
         </Routes>
-      </Router>
+      </Router> */}
+      <Header/>
+      <ViewProfile/>
+      <Footer/>
+
     </>
   );
 }
