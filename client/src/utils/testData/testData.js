@@ -32,6 +32,10 @@ const testData = {
             description: "An Executive (ESTJ) is someone with the Extraverted, Observant, Thinking, and Judging personality traits. They possess great fortitude, emphatically following their own sensible judgment. They often serve as a stabilizing force among others, able to offer solid direction amid adversity."
         },
 
+        badges: [
+            { java8: true }
+        ]
+
 
         qualifications: [
             {
