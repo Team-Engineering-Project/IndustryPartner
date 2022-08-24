@@ -20,7 +20,7 @@ const ViewProfile = () => {
           {/* left column */}
           <div className="col-lg-3">
             <ProfileCard graduate={graduate}/>
-            <DueDiligenceCard graduate={graduate}/>
+            <DueDiligenceCard diligence={graduate.diligence}/>
           </div>
 
           {/* middle column */}
@@ -36,10 +36,10 @@ const ViewProfile = () => {
               <QualificationsCard graduate={graduate}/>
             </div>
             <div className="row">
-              <AchievementsCard/>
+              <AchievementsCard achievements={graduate.achievements}/>
             </div>
             <div className='row'>
-              <FeedbackCard/>
+              <FeedbackCard feedback={graduate.feedback}/>
             </div>
           </div>
 
