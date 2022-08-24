@@ -26,7 +26,7 @@ const ViewProfile = () => {
 
           {/* middle column */}
           <div className="col-lg-6" style={{ paddingLeft: "0px" }}>
-            <PersonalityType />
+            <PersonalityType personalityType={graduate.personalityType} />
             <TrainingProgressCard training={graduate.trainingProgress} />
             <TechnicalSkills />
           </div>

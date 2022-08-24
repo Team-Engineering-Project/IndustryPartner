@@ -1,13 +1,25 @@
 import React from 'react'
 
-const PersonalityType = () => {
+
+const PersonalityType = ({ personalityType }) => {
+
   return (
     <div className="card mb-4">
-        <div className="card-body">
-            <h4 className="text-center">Personality type</h4>
-            <p className="text-center">I have no personality other than that of a person that sits in front of his monitor and holds his gamepad with greasy hands</p>
+      {/* <div className="card-body"> */}
+      <h4 className="card-header text-center" style={{ color: '#18164d' }}>Personality Type</h4>
+      <div className="card-body text-center">
+        <div className="row">
+          <div className="col-sm-3">
+            {personalityType.type}
+          </div>
+          <div className="col-sm text-muted">
+            {personalityType.description}
+          </div>
         </div>
-    </div>
+      </div>
+
+    </div >
+    // </div >
   )
 }
 

@@ -29,12 +29,15 @@ const TrainingProgressCard = ({ training }) => {
     //create a map function to loop through and print instead
     return (
         <div className="card mb-4">
-            <div className="card-body">
-                <h4>Training Progress</h4>
+            <h4 className='card-header text-center' style={{
+                color: '#18164d'
+            }}> Training Progress</h4 >
+
+            < div className="card-body" >
                 {tpElements}
 
             </div>
-        </div>
+        </div >
     )
 }
 

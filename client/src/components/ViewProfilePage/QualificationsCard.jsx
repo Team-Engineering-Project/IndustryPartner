@@ -30,14 +30,14 @@ const QualificationsCard = ({ qualifications }) => {
     })
 
     return (
-        <div className="card mb-4">
+        <div className="card mb-4 p-0">
+            <h4 className="card-header text-center" style={{ color: '#18164d', margin: '0px', paddingLeft: "0px", paddingRight: "0px" }}>
+                Qualifications
+            </h4>
             <div className="card-body">
-                <h4 className="text-center">Qualifications</h4>
-                <ul className="list-group list-group-flush rounded-3">
-                    {qualificationElements}
-                </ul>
+                {qualificationElements}
             </div>
-        </div>
+        </div >
     )
 }
 
