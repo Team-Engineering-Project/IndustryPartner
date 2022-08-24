@@ -2,10 +2,14 @@ import React from 'react'
 import achievementIcon from './img/achievement-icon.svg'
 const AchievementsCard = ({ achievements }) => {
 
+    let id = 0;
+
     const achievementElements = achievements.map(achievement => {
+
+
         return (
-            <div className='row p-2'>
-                <p className="mb-0" stt><img src={achievementIcon}></img>{achievement.title}</p>
+            <div className='row p-2' key={id++}>
+                <p className="mb-0" ><img src={achievementIcon}></img>{achievement.title}</p>
             </div>
         )
     })

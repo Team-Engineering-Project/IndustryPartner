@@ -6,13 +6,13 @@ const TechnicalSkills = ({ technicalSkills }) => {
 
     const skillElements = technicalSkills.map(skill => {
         return (
-            <>
+            <div key={id++}>
                 <p>{skill.skill}</ p>
                 <div className="progress rounded" style={{ height: '20px' }}>
                     <div className="progress-bar" role="progressbar" style={{ width: `${skill.progress}%` }} aria-valuenow={`${skill.progress}`}
                         aria-valuemin="0" aria-valuemax="100">{`${skill.progress}%`}</div>
                 </div>
-            </>
+            </div>
 
         )
     })

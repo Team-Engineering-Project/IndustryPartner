@@ -4,9 +4,11 @@ import closeQuoteIcon from './img/close-quote.svg';
 
 const FeedbackCard = ({ feedback }) => {
 
+    let id = 0;
+
     const feedbackElements = feedback.map(feedback => {
         return (
-            <li className="list-group-item justify-content-between align-items-center p-3">
+            <li className="list-group-item justify-content-between align-items-center p-3" key={id++}>
                 <img src={openQuoteIcon} alt="open quote icon"></img>
                 <i><p className="mb-0" style={{ display: 'inline', textOverflow: 'ellipsis' }}>{feedback.description}</p></i>
                 <img src={closeQuoteIcon} alt="close quote icon"></img>

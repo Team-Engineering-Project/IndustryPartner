@@ -2,9 +2,11 @@ import React from 'react'
 import flairIcon from './img/book-half.svg'
 const FlairCard = ({ flairs }) => {
 
+    let id = 0;
+
     const flairElements = flairs.map(flair => {
         return (
-            <li className="list-group-item justify-content-between align-items-center p-3">
+            <li className="list-group-item justify-content-between align-items-center p-3" key={id++}>
                 <img src={flairIcon}></img>
                 <h6 className="mb-0" style={{ display: 'inline', paddingLeft: '5px' }}>{flair.type}</h6>
                 <p className="mb-0" style={{ display: 'block', paddingLeft: '1.3em' }}>{flair.description}</p>
