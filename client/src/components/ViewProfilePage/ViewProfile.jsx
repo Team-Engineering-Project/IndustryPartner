@@ -13,18 +13,19 @@ const graduate = testData.graduate;
 
 
 const ViewProfile = () => {
+
   return (
     <>
       <div className="container py-5">
         <div className="row">
           {/* left column */}
-          <div className="col-lg-3">
+          <div className="col-lg-3" >
             <ProfileCard graduate={graduate} />
             <DueDiligenceCard graduate={graduate} />
           </div>
 
           {/* middle column */}
-          <div className="col-lg-6">
+          <div className="col-lg-6" style={{ paddingLeft: "0px" }}>
             <PersonalityType />
             <TrainingProgressCard training={graduate.trainingProgress} />
             <TechnicalSkills />

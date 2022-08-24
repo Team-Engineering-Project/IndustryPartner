@@ -31,7 +31,7 @@ const QualificationsCard = ({ qualifications }) => {
 
     return (
         <div className="card mb-4">
-            <div className="card-body p-0">
+            <div className="card-body">
                 <h4 className="text-center">Qualifications</h4>
                 <ul className="list-group list-group-flush rounded-3">
                     {qualificationElements}
