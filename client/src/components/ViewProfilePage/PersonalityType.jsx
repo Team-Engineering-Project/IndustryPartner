@@ -7,9 +7,9 @@ const PersonalityType = ({ personalityType }) => {
     <div className="card mb-4">
       {/* <div className="card-body"> */}
       <h4 className="card-header text-center" style={{ color: '#18164d' }}>Personality Type</h4>
-      <div className="card-body text-center">
+      <div className="card-body text-justified-center">
         <div className="row">
-          <div className="col-sm-3">
+          <div className="col-sm-2">
             {personalityType.type}
           </div>
           <div className="col-sm text-muted">
@@ -19,7 +19,6 @@ const PersonalityType = ({ personalityType }) => {
       </div>
 
     </div >
-    // </div >
   )
 }
 

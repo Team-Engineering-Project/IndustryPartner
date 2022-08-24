@@ -1,10 +1,10 @@
 import React from 'react'
 
-const TechnicalSkills = ({ technicalSkills }) => {
+const ProfessionalSkills = ({ professionSkills }) => {
 
     let id = 0;
 
-    const skillElements = technicalSkills.map(skill => {
+    const skillElements = professionSkills.map(skill => {
         return (
             <>
                 <p>{skill.skill}</ p>
@@ -22,7 +22,7 @@ const TechnicalSkills = ({ technicalSkills }) => {
             <div className="col-lg-12">
                 <div className="card mb-4">
                     <h4 className="card-header text-center" style={{ color: '#18164d' }}>
-                        Technical Skills
+                        Professional Skills
                     </h4>
                     <div className="card-body">
                         {skillElements}
@@ -33,4 +33,4 @@ const TechnicalSkills = ({ technicalSkills }) => {
     )
 }
 
-export default TechnicalSkills;
+export default ProfessionalSkills;

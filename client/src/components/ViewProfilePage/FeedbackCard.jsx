@@ -15,19 +15,19 @@ const FeedbackCard = ({ feedback }) => {
         )
     })
 
-  return (
-    <div className='col-lg-12' style={{paddingTop:'20px'}}>
-        <div className="card mb-4">
-            <h4 className="card-header text-center" style={{ color: '#18164d' }}>Feedback</h4>
-            <div className="card-body p-0">
-                <ul className="list-group list-group-flush rounded-3">
-                    {feedbackElements}
-                </ul>
+    return (
+        <div className='col-lg-12' >
+            <div className="card mb-4">
+                <h4 className="card-header text-center" style={{ color: '#18164d' }}>Feedback</h4>
+                <div className="card-body p-0">
+                    <ul className="list-group list-group-flush rounded-3">
+                        {feedbackElements}
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    
-  )
+
+    )
 }
 
 export default FeedbackCard;

@@ -13,9 +13,9 @@ const FlairCard = ({ flairs }) => {
     })
 
     return (
-        <div className="card mb-4">
+        <div className="card mb-4 p-0">
+            <h4 className="card-header text-center" style={{ color: '#18164d' }}>Flair</h4>
             <div className="card-body p-0">
-                <h4 className="text-center">Flair</h4>
                 <ul className="list-group list-group-flush rounded-3">
                     {flairElements}
                 </ul>
