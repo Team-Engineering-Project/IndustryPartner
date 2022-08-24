@@ -11,6 +11,7 @@ import QualificationsCard from './QualificationsCard';
 import AchievementsCard from './AchievementsCard';
 import FeedbackCard from './FeedbackCard';
 import FlairCard from './FlairCard.jsx';
+// import ProfessionalSkills from './ProfessionalSkills.jsx';
 const graduate = testData.graduate;
 
 
