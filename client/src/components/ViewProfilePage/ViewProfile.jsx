@@ -16,6 +16,7 @@ const graduate = testData.graduate;
 
 const ViewProfile = () => {
 
+  
   return (
     <>
       <div className="container py-5">
@@ -29,7 +30,7 @@ const ViewProfile = () => {
 
           {/* middle column */}
           <div className="col-lg-6" style={{ paddingLeft: "0px" }}>
-            <PersonalityType />
+            <PersonalityType personalityType={graduate.personalityType} />
             <TrainingProgressCard training={graduate.trainingProgress} />
             <TechnicalSkills />
             <FeedbackCard feedback={graduate.feedback} />

@@ -33,7 +33,8 @@ const testData = {
         },
 
         badges: {
-            java8: true 
+            java8: true,
+            agileExplorer: true 
         },
 
 
@@ -71,16 +72,39 @@ const testData = {
 
         technicalSkills: [
             {
-                skill: "Debugging"
+                skill: "Debugging",
+                progress: "90"
             },
             {
-                skill: "Testing"
+                skill: "Testing",
+                progress: "40"
             },
             {
-                skill: "Object-Orientated Programming"
+                skill: "Object-Orientated Programming",
+                progress: "70"
             },
             {
-                skill: "Pair programmer"
+                skill: "Pair programmer",
+                progress: "90"
+            }
+        ],
+
+        professionSkills: [
+            {
+                skill: "Presenting",
+                progress: "90"
+            },
+            {
+                skill: "Communicating",
+                progress: "40"
+            },
+            {
+                skill: "Project Management",
+                progress: "70"
+            },
+            {
+                skill: "Organisational Concepts",
+                progress: "90"
             }
         ],
 

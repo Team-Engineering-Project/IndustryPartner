@@ -5,8 +5,9 @@ import redReject from '../ViewProfilePage/img/redReject.svg';
 const BadgesCard = ({ diligence }) => {
     return (
         <div className="card mb-4">
+
+            <h5 className="card-header text-center" style={{ color: '#18164d' }}>Due Diligence Checks</h5>
             <div className="card-body p-0">
-                <h5 className="text-center">Due Diligence Checks</h5>
                 <ul className="list-group list-group-flush rounded-3">
                     <li className="list-group-item d-flex justify-content-between align-items-center p-3">
                         <p>{diligence.disclosure ? <img src={greenTick}></img> : <img src={redReject}></img>} Disclosure</p>
@@ -25,7 +26,7 @@ const BadgesCard = ({ diligence }) => {
                     </li>
                 </ul>
             </div>
-        </div>
+        </div >
     )
 }
 

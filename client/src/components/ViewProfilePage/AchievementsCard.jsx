@@ -12,9 +12,10 @@ const AchievementsCard = ({ achievements }) => {
     })
 
     return (
-        <div className="card mb-4">
+        <div className="card mb-4 p-0">
+
+            <h4 className="card-header text-center" style={{ color: '#18164d' }}>Achievements</h4>
             <div className="card-body p-0">
-                <h4 className="text-center">Achievements</h4>
                 <ul className="list-group list-group-flush rounded-3">
                     {achievementElements}
                 </ul>
