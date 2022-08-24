@@ -3,12 +3,14 @@ import React from 'react'
 import testData from '../../utils/testData/testData.js'
 import ProfileCard from './ProfileCard';
 import DueDiligenceCard from './DueDiligenceCard';
+import BadgesCard from './BadgesCard';
 import PersonalityType from './PersonalityType';
 import TrainingProgressCard from './TrainingProgressCard';
 import TechnicalSkills from './TechnicalSkills';
 import QualificationsCard from './QualificationsCard';
 import AchievementsCard from './AchievementsCard';
 import FeedbackCard from './FeedbackCard';
+import FlairCard from './FlairCard.jsx';
 const graduate = testData.graduate;
 
 
@@ -22,6 +24,7 @@ const ViewProfile = () => {
           <div className="col-lg-3">
             <ProfileCard graduate={graduate} />
             <DueDiligenceCard diligence={graduate.diligence} />
+            <BadgesCard badges={graduate.badges}/>
           </div>
 
           {/* middle column */}
@@ -29,6 +32,7 @@ const ViewProfile = () => {
             <PersonalityType />
             <TrainingProgressCard training={graduate.trainingProgress} />
             <TechnicalSkills />
+            <FeedbackCard feedback={graduate.feedback} />
           </div>
 
           {/* Third column */}
@@ -36,14 +40,11 @@ const ViewProfile = () => {
             <div className="row">
               <QualificationsCard qualifications={graduate.qualifications} />
             </div>
-            <div className="row">
-
-            </div >
             <div className='row'>
               <AchievementsCard achievements={graduate.achievements} />
             </div>
             <div className='row'>
-              <FeedbackCard feedback={graduate.feedback} />
+              <FlairCard flairs={graduate.flair}/>
             </div>
           </div >
         </div >

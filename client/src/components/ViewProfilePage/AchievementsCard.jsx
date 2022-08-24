@@ -6,7 +6,7 @@ const AchievementsCard = ({ achievements }) => {
         return (
             <li className="list-group-item justify-content-between align-items-center p-3">
                 <img src={achievementIcon}></img>
-                <p className="mb-0" style={{ display: 'inline' }}>{achievement.title}</p>
+                <p className="mb-0" style={{ display: 'inline', paddingLeft: '5px' }}>{achievement.title}</p>
             </li>
         )
     })

@@ -2,7 +2,7 @@ import React from 'react'
 import greenTick from '../ViewProfilePage/img/check2-circle.svg';
 import redReject from '../ViewProfilePage/img/redReject.svg';
 
-const DueDiligenceCard = ({ diligence }) => {
+const BadgesCard = ({ diligence }) => {
     return (
         <div className="card mb-4">
             <div className="card-body p-0">
@@ -29,4 +29,4 @@ const DueDiligenceCard = ({ diligence }) => {
     )
 }
 
-export default DueDiligenceCard;
+export default BadgesCard;

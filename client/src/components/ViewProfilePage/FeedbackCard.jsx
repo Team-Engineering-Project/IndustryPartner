@@ -16,14 +16,17 @@ const FeedbackCard = ({feedback}) => {
     })
 
   return (
-    <div className="card mb-4">
-        <div className="card-body p-0">
-            <h4 className="text-center">Feedback</h4>
-            <ul className="list-group list-group-flush rounded-3">
-                {feedbackElements}
-            </ul>
+    <div className='col-lg-12' style={{paddingTop:'20px'}}>
+        <div className="card mb-4">
+            <div className="card-body p-0">
+                <h4 className="text-center">Feedback</h4>
+                <ul className="list-group list-group-flush rounded-3">
+                    {feedbackElements}
+                </ul>
+            </div>
         </div>
     </div>
+    
   )
 }
 
