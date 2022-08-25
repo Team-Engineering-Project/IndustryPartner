@@ -5,7 +5,7 @@ jest.mock(`./components/Header`, () => () => {
     return <mock-header data-testid="Header" />;
 });
 
-jest.mock(`./components/TalentSpotlight/Main/Main`, () => () => {
+jest.mock(`./components/TalentSpotlight/Main`, () => () => {
     return <mock-main data-testid="Main" />;
 });
 

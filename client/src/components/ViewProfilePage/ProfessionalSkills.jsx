@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProfessionalSkills = ({ professionSkills }) => {
 
-    let id = 0;
+    //let id = 0;
 
     const skillElements = professionSkills.map(skill => {
         return (

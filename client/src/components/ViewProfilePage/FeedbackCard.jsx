@@ -4,6 +4,8 @@ import closeQuoteIcon from './img/close-quote.svg';
 
 const FeedbackCard = ({ feedback }) => {
 
+    //let id = 0;
+
     const feedbackElements = feedback.map(feedback => {
         return (
             <li className="list-group-item justify-content-between align-items-center p-3">

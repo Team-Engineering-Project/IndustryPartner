@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import ProfileCardComponent from './ProfileCardComponent';
+import ProfileCard from '../ProfileCard';
 
 import testData from '../../../../testGraduates.js';
 
@@ -12,7 +12,7 @@ describe(`ProfileCardComponent tests`, () => {
     describe(`render tests`, () => {
 
         beforeEach(() => {
-            render(<ProfileCardComponent graduate={graduate} />);
+            render(<ProfileCard graduate={graduate} />);
         })
 
         test(`should render the graduate's full name`, () => {

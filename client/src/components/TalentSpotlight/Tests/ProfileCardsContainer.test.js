@@ -1,21 +1,21 @@
 import { render, screen } from '@testing-library/react';
 
-import ProfileCardsComponent from '../ProfileCardsContainer/ProfileCardsComponent';
+import ProfileCardsContainer from '../ProfileCardsContainer';
 // '../components/ProfileCardsComponent';
 
 import testData from '../../../../testGraduates.js';
 
 const graduates = testData.graduates;
 
-jest.mock(`../ProfileCard/ProfileCardComponent`, () => () => {
-    return <mock-profilecardcomponent data-testid="ProfileCardComponent" />;
+jest.mock(`../ProfileCard`, () => () => {
+    return <mock-profilecard data-testid="ProfileCard" />;
 });
 
 describe(`ProfileCardComponent tests`, () => {
 
     test('should render the expected number of ProfileCardComponents', () => {
-        render(<ProfileCardsComponent graduates={graduates} />);
-        const profileCardElements = screen.getAllByTestId("ProfileCardComponent");
+        render(<ProfileCardsContainer graduates={graduates} />);
+        const profileCardElements = screen.getAllByTestId("ProfileCard");
         expect(profileCardElements.length).toBe(graduates.length);
 
 
