@@ -6,8 +6,8 @@ import  Main from './TalentSpotlight/Main.jsx'
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useCookies } from "react-cookie";
-import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
+
+
 
 function Header() {
      const [cookies, setCookie, removeCookie] = useCookies([]);

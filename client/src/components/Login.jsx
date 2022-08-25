@@ -1,14 +1,13 @@
+import React, { useState, useEffect } from "react";
 import './test.css';
 import Footer from './Footer';
 import dfLogo from './logo3.png';
-import { Navigate } from 'react-router-dom';
 import axios from 'axios';
-import React, { useState, useEffect } from "react";
-
 import { Link, useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
 import { ToastContainer, toast } from "react-toastify";
 
+  
 const Login = () => {
   const [cookies] = useCookies([]);
   const navigate = useNavigate();
@@ -72,8 +71,8 @@ const Login = () => {
                     <form onSubmit={(e) => handleSubmit(e)} style={{ width: '35rem' }}>
 
                       <h3 className="fw-normal mb-3 pb-3" style={{ letterSpacing: '1px' }}>Log in</h3>
-                      <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" name="email"
+                      <div className="form-floating mb-3">
+                        <input type="email" className="form-control" id="floatingInput" name="email"
                           placeholder="Email"
                           onChange={(e) =>
                             setValues({
@@ -82,11 +81,10 @@ const Login = () => {
                             })
                           }
                         />
-                        <label for="floatingInput">Email address</label>
+                        <label htmlFor="floatingInput">Email address</label>
                       </div>
                       <div class="form-floating mb-3">
-                        <input type="password" class="form-control" id="floatingPassword" name="password"
-
+                        <input type="password" className="form-control" id="floatingPassword" name="password"
                           placeholder="Password"
                           onChange={(e) =>
                             setValues({
@@ -95,16 +93,13 @@ const Login = () => {
                             })
                           }
                         />
-                        <label for="floatingPassword">Password</label>
+                        <label htmlFor="floatingPassword">Password</label>
                       </div>
                       <div className="pt-1 mb-4">
                         <input type="submit" className="btn-colour btn btn-lg btn-block" value="Login" />
                       </div>
                     </form>
-                    {/* <ToastContainer /> */}
-
-
-
+                    <ToastContainer />
 
                   </div>
                 </div>
@@ -118,29 +113,10 @@ const Login = () => {
         <Footer />
       </div>
     </div>
+    
   );
+  <ToastContainer />
 }
 
 export default Login;
 
-
-
-{/* <form onSubmit={login} style={{ width: '35rem' }}>
-                                            <h3 className="fw-normal mb-3 pb-3" style={{ letterSpacing: '1px' }}>Log in</h3>
-                                            <div class="form-floating mb-3">
-                                                <input type="email" class="form-control" id="floatingInput" name="email"
-                                                    value={user.email}
-                                                    onChange={handleChange} placeholder="name@example.com" />
-                                                <label for="floatingInput">Email address</label>
-                                            </div>
-                                            <div class="form-floating mb-3">
-                                                <input type="password" class="form-control" id="floatingPassword" name="password"
-                                                    value={user.password}
-                                                    onChange={handleChange}
-                                                    placeholder="Password" />
-                                                <label for="floatingPassword">Password</label>
-                                            </div>
-                                            <div className="pt-1 mb-4">
-                                                <input type="submit" className="btn-colour btn btn-lg btn-block" value="Login" />
-                                            </div>
-                                        </form> */}

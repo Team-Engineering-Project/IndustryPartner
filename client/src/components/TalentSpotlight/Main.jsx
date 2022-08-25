@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Filter from "./Filter";
 import ProfileCardsContainer from "./ProfileCardsContainer";
-
 import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
 import axios from "axios";
@@ -15,10 +14,7 @@ function Main(){
     const navigate = useNavigate();
     const [cookies, setCookie, removeCookie] = useCookies([]);
     
-    const logOut = () => {
-    removeCookie("jwt");
-    navigate("/login");
-    };
+   
     useEffect(() => {
         const verifyUser = async () => {
             if (!cookies.jwt) {
@@ -42,7 +38,10 @@ function Main(){
     };
         verifyUser();
 
-
+ const logOut = () => {
+    removeCookie("jwt");
+    navigate("/login");
+    };
         
         const getGraduates = async () =>{
             const response = await fetch('http://localhost:4000/graduates')
@@ -88,9 +87,11 @@ function Main(){
                     </div>
                 
             </div >
+             <ToastContainer />
             <Footer />
-
+       
         </>
+        
     )
 
 }
