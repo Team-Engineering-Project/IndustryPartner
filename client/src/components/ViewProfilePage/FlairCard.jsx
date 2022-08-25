@@ -7,7 +7,7 @@ const FlairCard = ({ flairs }) => {
             <>
                 <img src={flairIcon}></img>
                 <h6 className="mb-0" style={{ display: 'inline', paddingLeft: '5px' }}>{flair.type}</h6>
-                <p className="mb-0" style={{ display: 'block', paddingLeft: '1.3em', color: 'grey' }}>{flair.description}</p>
+                <p className="mb-0" style={{ display: 'block', paddingLeft: '1.3em', paddingBottom:'10px' , color: 'grey' }}>{flair.description}</p>
             </>
         )
     })
