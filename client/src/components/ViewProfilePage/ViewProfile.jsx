@@ -13,6 +13,9 @@ import FeedbackCard from './FeedbackCard';
 import FlairCard from './FlairCard.jsx';
 import ProfessionalSkills from './ProfessionalSkills.jsx';
 
+import Header from '../Header.jsx';
+import Footer from '../Footer.jsx';
+
 const graduate = testData.graduate;
 
 
@@ -20,6 +23,7 @@ const ViewProfile = () => {
 
   return (
     <>
+      <Header />
       <div className="container py-5">
         <div className="row">
           {/* left column */}
@@ -31,7 +35,7 @@ const ViewProfile = () => {
 
           {/* middle column */}
           <div className="col-lg-6" style={{ paddingLeft: "0px" }}>
-            <PersonalityType personalityType={graduate.personalityType} firstName={graduate.firstName}/>
+            <PersonalityType personalityType={graduate.personalityType} firstName={graduate.firstName} />
             <TrainingProgressCard training={graduate.trainingProgress} />
             <TechnicalSkills technicalSkills={graduate.technicalSkills} />
             <ProfessionalSkills professionSkills={graduate.professionSkills} />
@@ -52,6 +56,7 @@ const ViewProfile = () => {
           </div >
         </div >
       </div >
+      <Footer />
     </>
   )
 }

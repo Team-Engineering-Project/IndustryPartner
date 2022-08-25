@@ -14,11 +14,7 @@ body {
   color: blue;
 } */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -35,15 +31,7 @@ body {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
 
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .logoimage {
   width: 30px;
@@ -54,45 +42,21 @@ body {
 }
 
 .navbar {
-
   background-color: #18164d;
   width: 100%;
 }
 
-/* 
-.container {
-  display: grid;
-} */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
 
-.container1 {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: 60px 1fr 60px;
-  gap: 1em 1em;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "header header"
-    "content content"
-    "footer footer";
+  to {
+    transform: rotate(360deg);
+  }
 }
-
-/* #root {
-  position: relative;
-  min-height: 100vh;
-  padding-bottom: 2.5rem;
-} */
-/* .footer{
-
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
-
-.checkbox {
-  position: absolute;
-  margin: left;
-}
-=======
-} */
