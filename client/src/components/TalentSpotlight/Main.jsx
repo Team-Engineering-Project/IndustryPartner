@@ -25,7 +25,7 @@ function Main(){
             navigate("/login");
             } else {
         const { data } = await axios.post(
-          "http://localhost:4000",
+          "https://cors-anywhere.herokuapp.com/http://localhost:4000",
           {},
           {
             withCredentials: true,
