@@ -54,12 +54,12 @@ function ProfileCard({ graduate, graduates }) {
                 </Card.Text>
             </Card.Body>
 
-            {/* <Card.Footer style={{ padding: '10px 0px 10px 0px', backgroundColor: 'white' }}>
-                <Link to={{ pathname: `/profile`, state: { _id: graduate._id, graduates: graduates } }} >
+            <Card.Footer style={{ padding: '10px 0px 10px 0px', backgroundColor: 'white' }}>
+                <Link to="/profile" state={{ _id: graduate._id, graduates: graduates }} >
                     <button type='button' className='btn p-2' style={{ color: '#3B8BC9', alignItems: 'centergit', width: '100%' }}><strong>View profile</strong></button>
                 </Link>
 
-            </Card.Footer> */}
+            </Card.Footer>
         </Card >
     )
 }

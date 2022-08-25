@@ -1,10 +1,10 @@
 import React from 'react'
 
-const ProfessionalSkills = ({ professionSkills }) => {
+const ProfessionalSkills = ({ professionalSkills }) => {
 
     let id = 0;
 
-    const skillElements = professionSkills.map(skill => {
+    const skillElements = professionalSkills.map(skill => {
         return (
             <div key={id++}>
                 <p className='m-0'>{skill.skill}</ p>

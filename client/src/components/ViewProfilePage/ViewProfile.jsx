@@ -22,19 +22,18 @@ const graduate = testData.graduate;
 
 const ViewProfile = () => {
 
-  // const location = useLocation();
+  const location = useLocation();
 
-  // const graduateId = location.state._id;
-  // console.log(graduateId)
-  // const allGraduates = location.state.graduates;
-  // console.dir(allGraduates);
+  const graduateId = location.state._id;
+  const allGraduates = location.state.graduates;
 
-  // const filteredGraduates = allGraduates.filter(graduate => graduate._id === graduateId);
+  const filteredGraduates = allGraduates.filter(graduate => graduate._id === graduateId);
 
-  // const graduate = filteredGraduates[0]
+  const graduate = filteredGraduates[0]
 
   return (
     <>
+
       <Header />
       <div className="container py-5">
         <div className="row">
@@ -50,7 +49,7 @@ const ViewProfile = () => {
             <PersonalityType personalityType={graduate.personalityType} firstName={graduate.firstName} />
             <TrainingProgressCard training={graduate.trainingProgress} />
             <TechnicalSkills technicalSkills={graduate.technicalSkills} />
-            <ProfessionalSkills professionSkills={graduate.professionSkills} />
+            <ProfessionalSkills professionalSkills={graduate.professionalSkills} />
             <FeedbackCard feedback={graduate.feedback} />
           </div>
 
