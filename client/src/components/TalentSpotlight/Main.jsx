@@ -45,7 +45,7 @@ function Main(){
 
         
         const getGraduates = async () =>{
-            const response = await fetch('http://localhost:4000/graduates')
+            const response = await fetch('https://cors-anywhere.herokuapp.com/http://localhost:4000/graduates')
             const graduatesData = await response.json();
             if (response.ok){
                 setGraduates(graduatesData);
