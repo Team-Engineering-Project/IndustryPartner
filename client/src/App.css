@@ -8,11 +8,11 @@ body {
 }
 
 
-.viewProfileButton {
+/* .viewProfileButton {
   border: none;
   background-color: white;
   color: blue;
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
