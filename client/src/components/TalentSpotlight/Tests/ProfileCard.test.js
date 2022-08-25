@@ -2,9 +2,9 @@ import { render, screen } from '@testing-library/react';
 
 import ProfileCard from '../ProfileCard';
 
-import testData from '../../../../testGraduates.js';
+import testData from '../../../utils/testData/testData.js';
 
-const graduate = testData.graduates[0]
+const graduate = testData.graduate;
 
 describe(`ProfileCardComponent tests`, () => {
 
@@ -33,7 +33,7 @@ describe(`ProfileCardComponent tests`, () => {
 
         test(`should render an <img> tag with the src attribute 'ProfileImg.png'`, () => {
             const profileImg = screen.getAllByRole('img');
-            expect(profileImg[0]).toHaveAttribute('src', 'ProfileImg.png');
+            expect(profileImg[0]).toHaveAttribute('src', 'profile-placeholder.jpeg');
         })
 
     })
