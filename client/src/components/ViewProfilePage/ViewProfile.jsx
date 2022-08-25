@@ -18,7 +18,6 @@ const graduate = testData.graduate;
 
 const ViewProfile = () => {
 
-
   return (
     <>
       <div className="container py-5">

@@ -7,9 +7,9 @@ const ProfessionalSkills = ({ professionSkills }) => {
     const skillElements = professionSkills.map(skill => {
         return (
             <>
-                <p>{skill.skill}</ p>
-                <div className="progress rounded" style={{ height: '20px' }}>
-                    <div className="progress-bar" role="progressbar" style={{ width: `${skill.progress}%` }} aria-valuenow={`${skill.progress}`}
+                <p className='m-0'>{skill.skill}</ p>
+                <div className="progress rounded" style={{ height: '20px', marginBottom:'auto' }}>
+                    <div className="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style={{ width: `${skill.progress}%` }} aria-valuenow={`${skill.progress}`}
                         aria-valuemin="0" aria-valuemax="100">{`${skill.progress}%`}</div>
                 </div>
             </>
@@ -21,7 +21,7 @@ const ProfessionalSkills = ({ professionSkills }) => {
         <div className="row">
             <div className="col-lg-12">
                 <div className="card mb-4">
-                    <h4 className="card-header text-center" style={{ color: '#18164d' }}>
+                    <h4 className="card-header text-center" style={{ color: 'white', backgroundColor:'#3B8BC9' }}>
                         Professional Skills
                     </h4>
                     <div className="card-body">

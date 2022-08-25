@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './img/ProfileImg.png'
+// import logo from './img/ProfileImg.png'
+import profilePlaceholder from './img/profile-placeholder.jpeg'
 
 const ProfileCard = ({ graduate }) => {
   return (
     <div className="card mb-4">
       <div className='card-header text-center'>
-        <img src={logo} alt="avatar"
-          className="rounded-circle img-fluid" style={{ width: '150px' }} />
+        <img src={profilePlaceholder} alt="avatar"
+          className="rounded-circle img-fluid" style={{ width: '200px' }} />
         <h3 className="my-3" style={{ color: '#18164d' }}>{`${graduate.firstName} ${graduate.lastName}`}</h3>
 
       </div>

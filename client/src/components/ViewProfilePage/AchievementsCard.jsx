@@ -4,45 +4,42 @@ const AchievementsCard = ({ achievements }) => {
 
     const achievementElements = achievements.map(achievement => {
         return (
-            <div className='row p-2'>
-                <p className="mb-0" stt><img src={achievementIcon}></img>{achievement.title}</p>
+            <div style={{display:'block', paddingBottom: '10px'}}>
+                <img src={achievementIcon} alt="achievement icon"></img>
+                <h6 className="mb-0" style={{display:'inline', paddingLeft:'5px'}}>{achievement.title}</h6>
             </div>
         )
     })
 
     return (
         <div className="card mb-4 p-0">
-            <h4 className="card-header text-center" style={{ color: '#18164d' }}>Achievements</h4>
-            <div className="card-body p-0">
+            <h5 className="card-header text-center" style={{ color: 'white', backgroundColor:'#3B8BC9' }}>Achievements</h5>
+            <div className="card-body p-3">
                 {achievementElements}
             </div>
         </div>
     )
 }
 
-// const BadgesCard = ({ diligence }) => {
-//     return (
-//         <div className="card mb-4">
+// const FlairCard = ({ flairs }) => {
 
-//             <h5 className="card-header text-center" style={{ color: '#18164d' }}>Due Diligence Checks</h5>
-//             <div className="card-body p-0">
-//                 <div className='row p-2'>
-//                     <p className='mb-0'>{diligence.disclosure ? <img src={greenTick}></img> : <img src={redReject}></img>} Disclosure</p>
-//                 </div>
-//                 <div className='row p-2'>
-//                     <p className="mb-0">{diligence.rightToWork ? <img src={greenTick}></img> : <img src={redReject}></img>} Right to work</p>
-//                 </div>
-//                 <div className='row p-2'>
-//                     <p className="mb-0">{diligence.identity ? <img src={greenTick}></img> : <img src={redReject}></img>} Identity</p>
-//                 </div>
-//                 <div className='row p-2'>
-//                     <p className="mb-0">{diligence.education ? <img src={greenTick}></img> : <img src={redReject}></img>} Education</p>
-//                 </div>
-//                 <div className='row p-2'>
-//                     <p className="mb-0">{diligence.credit ? <img src={greenTick}></img> : <img src={redReject}></img>} Credit</p>
-//                 </div>
+//     const flairElements = flairs.map(flair => {
+//         return (
+//             <>
+//                 <img src={flairIcon}></img>
+//                 <h6 className="mb-0" style={{ display: 'inline', paddingLeft: '5px' }}>{flair.type}</h6>
+//                 <p className="mb-0" style={{ display: 'block', paddingLeft: '1.3em', color: 'grey' }}>{flair.description}</p>
+//             </>
+//         )
+//     })
+
+//     return (
+//         <div className="card mb-4 p-0">
+//             <h5 className="card-header text-center" style={{ color: 'white', backgroundColor:'#3B8BC9' }}>Flair</h5>
+//             <div className="card-body p-3">
+//                 {flairElements}
 //             </div>
-//         </div >
+//         </div>
 //     )
 // }
 
