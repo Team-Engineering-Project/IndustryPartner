@@ -5,11 +5,9 @@ import ProfileCard from "./ProfileCard";
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import Col from 'react-bootstrap/Col';
 
-function ProfileCardsContainer({ graduates })
-{
-    const graduateCard = graduates.map((graduate) =>
-    {
-        return <ProfileCard key={graduate._id} graduate={graduate} />
+function ProfileCardsContainer({ graduates }) {
+    const graduateCard = graduates.map((graduate) => {
+        return <ProfileCard key={graduate._id} graduate={graduate} graduates={graduates} />
     })
 
 

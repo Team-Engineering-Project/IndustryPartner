@@ -12,16 +12,17 @@ function App() {
 
   return (
     <>
-      
+
       <Router>
         <Routes>
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/" element={<Main />} />
+          {/* <Route exact path='/profile' element={<ViewProfile />} /> */}
         </Routes>
       </Router>
-      
+
       {/* <ViewProfile /> */}
-     
+
 
 
 

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 import profilePlaceholder from './img/profile-placeholder.jpeg'
 import graduationIcon from './img/mortarboard-fill.svg';
@@ -7,7 +8,7 @@ import badgeIcon from './img/badge-icon.svg'
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-function ProfileCard({ graduate }) {
+function ProfileCard({ graduate, graduates }) {
     return (
         <Card style={{ minHeight: '25rem', width: '18rem', marginRight: 'auto' }}>
             {/* <Card.Img variant="top" src={logo} style={{ width: '100px', padding: '10px', borderRadius: '200px' }} /> */}
@@ -53,10 +54,12 @@ function ProfileCard({ graduate }) {
                 </Card.Text>
             </Card.Body>
 
-            <Card.Footer style={{ padding: '10px 0px 10px 0px', backgroundColor: 'white' }}>
-                <button type='button' className='btn p-2' style={{ color: '#3B8BC9', alignItems: 'centergit', width: '100%' }}><strong>View profile</strong></button>
+            {/* <Card.Footer style={{ padding: '10px 0px 10px 0px', backgroundColor: 'white' }}>
+                <Link to={{ pathname: `/profile`, state: { _id: graduate._id, graduates: graduates } }} >
+                    <button type='button' className='btn p-2' style={{ color: '#3B8BC9', alignItems: 'centergit', width: '100%' }}><strong>View profile</strong></button>
+                </Link>
 
-            </Card.Footer>
+            </Card.Footer> */}
         </Card >
     )
 }

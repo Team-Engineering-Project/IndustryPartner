@@ -1,4 +1,5 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom';
 //import redReject from '../ViewProfilePage/img/redReject.svg';
 import testData from '../../utils/testData/testData.js'
 import ProfileCard from './ProfileCard';
@@ -20,6 +21,17 @@ const graduate = testData.graduate;
 
 
 const ViewProfile = () => {
+
+  // const location = useLocation();
+
+  // const graduateId = location.state._id;
+  // console.log(graduateId)
+  // const allGraduates = location.state.graduates;
+  // console.dir(allGraduates);
+
+  // const filteredGraduates = allGraduates.filter(graduate => graduate._id === graduateId);
+
+  // const graduate = filteredGraduates[0]
 
   return (
     <>
