@@ -45,6 +45,7 @@ function Main() {
 
         const getGraduates = async () => {
             const response = await fetch('https://cors.eu.org/http://localhost:4000/graduates')
+
             const graduatesData = await response.json();
             if (response.ok) {
                 setGraduates(graduatesData);
@@ -97,3 +98,4 @@ function Main() {
 }
 
 export default Main;
+

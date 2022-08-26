@@ -26,7 +26,9 @@ const Login = () => {
     event.preventDefault();
     try {
       const { data } = await axios.post(
+
         "https://cors.eu.org/http://localhost:4000/login",
+
         {
           ...values,
         },
@@ -119,4 +121,6 @@ const Login = () => {
 }
 
 export default Login;
+
+
 
