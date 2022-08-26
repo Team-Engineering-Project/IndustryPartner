@@ -7,6 +7,7 @@ import Header from '../src/components/Header';
 import Footer from '../src/components/Footer';
 import ViewProfile from './components/ViewProfilePage/ViewProfile'
 import Login from './components/Login';
+ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
