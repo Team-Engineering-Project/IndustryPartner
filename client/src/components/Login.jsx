@@ -7,7 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
 import { ToastContainer, toast } from "react-toastify";
 
-  
+
 const Login = () => {
   const [cookies] = useCookies([]);
   const navigate = useNavigate();
@@ -26,7 +26,7 @@ const Login = () => {
     event.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/login",
+        "https://cors.eu.org/http://localhost:4000/login",
         {
           ...values,
         },
@@ -113,7 +113,7 @@ const Login = () => {
         <Footer />
       </div>
     </div>
-    
+
   );
   <ToastContainer />
 }
