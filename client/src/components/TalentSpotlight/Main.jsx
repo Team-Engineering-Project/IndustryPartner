@@ -15,10 +15,10 @@ function Main(){
     const navigate = useNavigate();
     const [cookies, setCookie, removeCookie] = useCookies([]);
     
-    const logOut = () => {
-    removeCookie("jwt");
-    navigate("/login");
-    };
+    // const logOut = () => {
+    // removeCookie("jwt");
+    // navigate("/login");
+    // };
     useEffect(() => {
         const verifyUser = async () => {
             if (!cookies.jwt) {
@@ -41,9 +41,6 @@ function Main(){
       }
     };
         verifyUser();
-
-
-        
         const getGraduates = async () =>{
             const response = await fetch('http://localhost:4000/graduates')
             const graduatesData = await response.json();

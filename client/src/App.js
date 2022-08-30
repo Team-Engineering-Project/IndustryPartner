@@ -12,7 +12,6 @@ function App() {
 
   return (
     <>
-
       <Router>
         <Routes>
           <Route exact path="/login" element={<Login />} />
@@ -20,12 +19,6 @@ function App() {
           <Route exact path="/profile" element={<ViewProfile />} />
         </Routes>
       </Router>
-
-      {/* <ViewProfile /> */}
-
-
-
-
     </>
   );
 }
