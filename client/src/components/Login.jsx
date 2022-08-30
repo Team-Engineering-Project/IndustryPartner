@@ -67,13 +67,10 @@ const Login = () => {
                     <span className="h1 fw-bold mb-0">Digital Futures</span>
                   </div>
                   <div className="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
-
-
                     <form onSubmit={(e) => handleSubmit(e)} style={{ width: '35rem' }}>
-
                       <h3 className="fw-normal mb-3 pb-3" style={{ letterSpacing: '1px' }}>Log in</h3>
-                      <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" name="email"
+                      <div className="form-floating mb-3">
+                        <input type="email" className="form-control" id="floatingInput" name="email"
                           placeholder="Email"
                           onChange={(e) =>
                             setValues({
@@ -82,10 +79,10 @@ const Login = () => {
                             })
                           }
                         />
-                        <label for="floatingInput">Email address</label>
+                        <label className="floatingInput">Email address</label>
                       </div>
-                      <div class="form-floating mb-3">
-                        <input type="password" class="form-control" id="floatingPassword" name="password"
+                      <div className="form-floating mb-3">
+                        <input type="password" className="form-control" id="floatingPassword" name="password"
 
                           placeholder="Password"
                           onChange={(e) =>
@@ -95,17 +92,13 @@ const Login = () => {
                             })
                           }
                         />
-                        <label for="floatingPassword">Password</label>
+                        <label className="floatingPassword">Password</label>
                       </div>
                       <div className="pt-1 mb-4">
                         <input type="submit" className="btn-colour btn btn-lg btn-block" value="Login" />
                       </div>
                     </form>
                     {/* <ToastContainer /> */}
-
-
-
-
                   </div>
                 </div>
               </div>

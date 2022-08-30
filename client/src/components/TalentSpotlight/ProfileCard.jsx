@@ -22,7 +22,7 @@ function ProfileCard({ graduate, graduates }) {
                         <p className="m-0" style={{ color: 'grey', fontSize: '15px', paddingTop: '3px' }}>{graduate.dfSubject}</p>
                     </Card.Title>
                 </div>
-                <Card.Text>
+                <div>
                     <div className="graduation">
                         <Card.Img src={graduationIcon} style={{ width: '9%', height: 'auto' }} />
                         <h5 style={{ display: 'inline', paddingLeft: '10px', fontSize: '1rem' }}>Digital Futures graduation</h5>
@@ -51,7 +51,7 @@ function ProfileCard({ graduate, graduates }) {
                             <h5 style={{ display: 'inline', paddingLeft: '8px', fontSize: '1rem' }} >AWS Solutions Associate</h5>
                             <p style={{ paddingLeft: '2.05em', color: 'grey', fontSize: '1rem' }}>{graduate.badges.aws}</p>
                         </div> : <></>}
-                </Card.Text>
+                </div>
             </Card.Body>
 
             <Card.Footer style={{ padding: '10px 0px 10px 0px', backgroundColor: 'white' }}>
