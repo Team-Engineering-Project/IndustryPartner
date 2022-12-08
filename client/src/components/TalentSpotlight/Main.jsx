@@ -25,7 +25,7 @@ function Main(){
             navigate("/login");
             } else {
         const { data } = await axios.post(
-          "http://localhost:4000",
+          "https://mernhiringportal.herokuapp.com",
           {},
           {
             withCredentials: true,
@@ -42,7 +42,7 @@ function Main(){
     };
         verifyUser();
         const getGraduates = async () =>{
-            const response = await fetch('http://localhost:4000/graduates')
+            const response = await fetch('https://mernhiringportal.herokuapp.com/graduates')
             const graduatesData = await response.json();
             if (response.ok){
                 setGraduates(graduatesData);

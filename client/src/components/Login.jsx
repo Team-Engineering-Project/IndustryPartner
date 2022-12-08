@@ -27,7 +27,7 @@ const Login = () => {
     event.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/login",
+        "https://mernhiringportal.herokuapp.com/login",
         {
           ...values,
         },
